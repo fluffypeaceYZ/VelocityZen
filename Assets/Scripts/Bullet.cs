@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class Bullet : MonoBehaviour {
-
+	public float CannonSpeed;
 	public GameObject bulletSpawn;
 	public GameObject bulletInstance;
 	public float Bullet_Forward_Force;
@@ -15,6 +15,25 @@ public class Bullet : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+		if (Input.GetKey (KeyCode.Q)) 
+
+		{
+			transform.Rotate(Vector3.left * Time.deltaTime * CannonSpeed);
+		}
+
+
+
+
+
+
+		if (Input.GetKey (KeyCode.A))
+
+		{
+			transform.Rotate(Vector3.right * Time.deltaTime * CannonSpeed);
+		}
+
+
 
 		bulletTimer -= Time.deltaTime;
 		if (bulletTimer <=0){
