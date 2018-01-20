@@ -3,6 +3,8 @@ using System.Collections;
 
 public class Turret_Ball : MonoBehaviour {
 
+	public float CannonSpeed;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -11,9 +13,14 @@ public class Turret_Ball : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if (Input.GetKeyDown (KeyCode.Q))
+		if (Input.GetKey (KeyCode.Q))
 		{
-			//transform.Rotate += new Vector3(0, 0.3f, 0);
+			transform.Rotate(Vector3.left * Time.deltaTime * CannonSpeed);
+		}
+
+		if (Input.GetKey (KeyCode.A))
+		{
+			transform.Rotate(Vector3.right * Time.deltaTime * CannonSpeed);
 		}
 	
 	}
