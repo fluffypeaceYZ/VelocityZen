@@ -5,6 +5,8 @@ public class Vehicle : MonoBehaviour
 {
     float BottomScreen = 10f;
     float UpperScreen = -7.4f;
+	public Material matHit;
+	public Color colRed;
 	 
     // Use this for initialization
     void Start()
@@ -15,6 +17,10 @@ public class Vehicle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+		if (Input.GetKeyDown(KeyCode.C)){
+
+		}
+
 
         transform.position += new Vector3(0, 0, 0.4f);
 
