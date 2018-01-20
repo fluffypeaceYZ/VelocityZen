@@ -1,10 +1,13 @@
 fileFormatVersion: 2
 guid: 92ea3daaa38cd734ea05d4f2efc1f227
-timeCreated: 1454120501
+timeCreated: 1516407459
 licenseType: Free
 MonoImporter:
+  externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - bulletSpawn: {instanceID: 0}
+  - bulletInstance: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
