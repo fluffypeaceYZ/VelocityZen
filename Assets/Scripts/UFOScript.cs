@@ -46,7 +46,7 @@ public class UFOScript : MonoBehaviour {
 
 		//Tell the bullet to be "pushed" forward by an amount set by Bullet_Forward_Force.
 		//Temporary_RigidBody.AddForce(transform.forward * Laser_Forward_Force);
-			Temporary_RigidBody.AddForce(0, -3, -18, ForceMode.Impulse);
+			Temporary_RigidBody.AddForce(0, -8, -18, ForceMode.Impulse);
 		 
 
 		//Basic Clean Up, set the Bullets to self destruct after 10 Seconds, I am being VERY generous here, normally 3 seconds is plenty.
