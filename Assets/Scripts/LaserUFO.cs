@@ -19,10 +19,10 @@ public class LaserUFO : MonoBehaviour {
 	void OnCollisionEnter (Collision col){
 			
 		if ((col.gameObject.tag == "Ground") || (col.gameObject.tag == "Player")) {
-
+			
 			hitsmoke.Play();
 		
-			Destroy (gameObject, 0.5f);
+			Destroy (this.gameObject, 0.5f);
 		}
 	}
 }
