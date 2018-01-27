@@ -6,7 +6,9 @@ using UnityEngine.SceneManagement;
 public class PlayerHealth : MonoBehaviour
 {
 	public GameObject GameOverScreen;
-
+	public Text HealthKits;
+	private int NumberofKits = 0;
+	private int MaxNumberofKits = 99;
 	public Sprite[] healthBarArray;
 	public Image healthBar;
 
@@ -19,6 +21,26 @@ public class PlayerHealth : MonoBehaviour
 
 	void Update ()
 	{
+
+		if (Input.GetKeyDown (KeyCode.H) && NumberofKits>=1){
+
+			NumberofKits-=1;
+			HealthKits.text = NumberofKits.ToString();
+			healthBarCount = 12;
+			healthBar.sprite = healthBarArray[0];
+		}
+
+		if (Input.GetKeyDown (KeyCode.B)){
+
+			NumberofKits+=1;
+			HealthKits.text = NumberofKits.ToString();
+		}
+
+		if (NumberofKits >= 99) {
+			NumberofKits = 99;
+			HealthKits.text = NumberofKits.ToString();
+		}
+
 		if (Input.GetKeyDown (KeyCode.P))
 		{
 			TakeDamage ();
@@ -59,7 +81,10 @@ public class PlayerHealth : MonoBehaviour
 
 
 		if (other.gameObject.tag == "Health") {
-			HealDamage ();
+
+
+			NumberofKits+=1;
+			HealthKits.text = NumberofKits.ToString();
 			Destroy (other.gameObject);
 
 
