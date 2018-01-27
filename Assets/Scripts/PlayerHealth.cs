@@ -37,10 +37,11 @@ public class PlayerHealth : MonoBehaviour
 
 	public void TakeDamage()
 	{
-		healthBarCount++;
+		healthBarCount+=2;
 
 		if (healthBarCount >= 12){
 
+			healthBar.sprite = healthBarArray [11];
 			GameOver ();
 		}
 
