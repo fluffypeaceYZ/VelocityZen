@@ -57,9 +57,9 @@ public class PlayerHealth : MonoBehaviour
 
 
 
-		if (other.gameObject.tag == "Blood") {
+		if (other.gameObject.tag == "Health") {
 			HealDamage ();
-			Destroy (other.gameObject, 1);
+			Destroy (other.gameObject);
 
 
 		}
