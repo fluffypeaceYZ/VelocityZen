@@ -21,6 +21,11 @@ public class PlayerHealth : MonoBehaviour
 
 	void Update ()
 	{
+		if (healthBarCount <= 0) {
+
+			NumberofKits = NumberofKits;
+			HealthKits.text = NumberofKits.ToString();
+		}
 
 		if (Input.GetKeyDown (KeyCode.H) && NumberofKits>=1){
 
