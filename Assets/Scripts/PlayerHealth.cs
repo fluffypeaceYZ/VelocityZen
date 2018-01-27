@@ -37,9 +37,9 @@ public class PlayerHealth : MonoBehaviour
 
 	public void TakeDamage()
 	{
-		healthBarCount+=2;
+		healthBarCount++;
 
-		if (healthBarCount > 11){
+		if (healthBarCount >= 12){
 
 			GameOver ();
 		}
