@@ -39,7 +39,7 @@ public class PlayerHealth : MonoBehaviour
 	{
 		healthBarCount++;
 
-		if (healthBarCount > 11){
+		if (healthBarCount > 10){
 
 			GameOver ();
 		}
@@ -53,20 +53,24 @@ public class PlayerHealth : MonoBehaviour
 		healthBar.sprite = healthBarArray [healthBarCount];
 	}
 
-	void OnCollisionEnter (Collider other) {
+	void OnTriggerEnter (Collider other) {
 
-		if(other.gameObject.tag == "Laser")
-		{
-			TakeDamage ();
-		}
 
-		if(other.gameObject.tag == "Health")
-		{
-			HealDamage();
+
+		if (other.gameObject.tag == "Blood") {
+			HealDamage ();
 			Destroy (other.gameObject, 1);
 
 
 		}
+	}
+
+	void OnCollisionEnter (Collision col){
+
+			if (col.gameObject.tag == "LaserUFO") {
+
+				TakeDamage();
+			}
 
 	}
 
@@ -75,3 +79,4 @@ public class PlayerHealth : MonoBehaviour
 		GameOverScreen.SetActive (true);
 	}
 }
+
