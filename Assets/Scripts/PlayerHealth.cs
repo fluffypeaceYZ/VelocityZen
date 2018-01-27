@@ -39,7 +39,7 @@ public class PlayerHealth : MonoBehaviour
 	{
 		healthBarCount++;
 
-		if (healthBarCount > 10){
+		if (healthBarCount > 11){
 
 			GameOver ();
 		}

@@ -22,7 +22,7 @@ public class LaserUFO : MonoBehaviour {
 			
 			hitsmoke.Play();
 		
-			Destroy (this.gameObject, 0.5f);
+			Destroy (this.gameObject, 2.0f);
 		}
 	}
 }
