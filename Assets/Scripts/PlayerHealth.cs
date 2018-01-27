@@ -12,7 +12,7 @@ public class PlayerHealth : MonoBehaviour
 	public Sprite[] healthBarArray;
 	public Image healthBar;
 
-	private int healthBarCount = 0;
+	private int healthBarCount = 12;
 
 	void Start () 
 	{
@@ -21,7 +21,7 @@ public class PlayerHealth : MonoBehaviour
 
 	void Update ()
 	{
-		if (healthBarCount <= 0) {
+		if (healthBarCount > 12) {
 
 			NumberofKits = NumberofKits;
 			HealthKits.text = NumberofKits.ToString();
@@ -32,7 +32,7 @@ public class PlayerHealth : MonoBehaviour
 			NumberofKits-=1;
 			HealthKits.text = NumberofKits.ToString();
 			healthBarCount = 12;
-			healthBar.sprite = healthBarArray[0];
+			healthBar.sprite = healthBarArray[11];
 		}
 
 		if (Input.GetKeyDown (KeyCode.B)){
@@ -64,11 +64,11 @@ public class PlayerHealth : MonoBehaviour
 
 	public void TakeDamage()
 	{
-		healthBarCount+=2;
+		healthBarCount-=2;
 
-		if (healthBarCount >= 12){
+		if (healthBarCount <= 0){
 
-			healthBar.sprite = healthBarArray [11];
+			healthBar.sprite = healthBarArray [0];
 			GameOver ();
 		}
 
@@ -77,7 +77,7 @@ public class PlayerHealth : MonoBehaviour
 
 	public void HealDamage(){
 
-		healthBarCount = 0;
+		healthBarCount = 12;
 		healthBar.sprite = healthBarArray [healthBarCount];
 	}
 
