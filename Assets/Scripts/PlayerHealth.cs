@@ -37,7 +37,7 @@ public class PlayerHealth : MonoBehaviour
 
 	public void TakeDamage()
 	{
-		healthBarCount++;
+		healthBarCount+=2;
 
 		if (healthBarCount > 11){
 
@@ -69,7 +69,7 @@ public class PlayerHealth : MonoBehaviour
 
 			if (col.gameObject.tag == "LaserUFO") {
 
-				TakeDamage();
+			TakeDamage ();
 			}
 
 	}
