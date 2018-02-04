@@ -8,15 +8,18 @@ public class UFOHealth : MonoBehaviour {
 	public Sprite[] lifeRingArray;
 	public Image lifeRing;
 	private int lifeRingCount = 12;
+	public GameObject lifeRingSpawn;
+
 	// Use this for initialization
 	void Start () {
+		
 		
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-		Vector3 lifeRingPos = Camera.main.WorldToScreenPoint (this.transform.position);
+		Vector3 lifeRingPos = Camera.main.WorldToScreenPoint (lifeRingSpawn.transform.position);
 		lifeRing.transform.position = lifeRingPos;
 
 		if (Input.GetKeyDown (KeyCode.R)) {
