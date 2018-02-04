@@ -4,6 +4,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
+
 {
 	public GameObject GameOverScreen;
 	public Text HealthKits;
@@ -12,28 +13,31 @@ public class PlayerHealth : MonoBehaviour
 	public Sprite[] healthBarArray;
 	public Image healthBar;
 
-	private int healthBarCount = 12;
+	private int healthBarCount;
 
 	void Start () 
 	{
-
+		healthBarCount = healthBarArray.Length-1;
 	}
 
 	void Update ()
 	{
-		if (healthBarCount > 12) {
 
-			NumberofKits = NumberofKits;
+
+
+		if (Input.GetKeyDown (KeyCode.H) && NumberofKits>=1 && healthBarCount < 11)
+		{
+			NumberofKits -= 1;
 			HealthKits.text = NumberofKits.ToString();
+			healthBarCount = healthBarArray.Length;
+
+			// Also try not to input numbers... you can get "11" by doing healthBarArray.length-1
+			//healthBar.sprite = healthBarArray[11];
+
+			// this will always get the last sprite in the array
+			healthBar.sprite = healthBarArray[healthBarArray.Length - 1];
 		}
 
-		if (Input.GetKeyDown (KeyCode.H) && NumberofKits>=1){
-
-			NumberofKits-=1;
-			HealthKits.text = NumberofKits.ToString();
-			healthBarCount = 12;
-			healthBar.sprite = healthBarArray[11];
-		}
 
 		if (Input.GetKeyDown (KeyCode.B)){
 

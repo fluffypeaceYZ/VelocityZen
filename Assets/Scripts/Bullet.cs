@@ -7,14 +7,31 @@ public class Bullet : MonoBehaviour {
 	public GameObject bulletInstance;
 	public float Bullet_Forward_Force;
 	public float bulletTimer;
+	public float minAngle, maxAngle;
 
 	// Use this for initialization
 	void Start () {
 	
 	}
+
+	Quaternion ClampRotationAroundXAxis(Quaternion q, float min, float max)
+
+{
+		q.x /= q.w;
+		q.y /= q.w;
+		q.z /= q.w;
+		q.w = 1.0f;
+
+		float angleX = 2.0f * Mathf.Rad2Deg * Mathf.Atan(q.x);
+		angleX = Mathf.Clamp(angleX, min, max);
+		q.x = Mathf.Tan(0.5f * Mathf.Deg2Rad * angleX);
+		return q;
+	}
 	
 	// Update is called once per frame
 	void Update () {
+
+	transform.rotation = ClampRotationAroundXAxis(transform.rotation, minAngle, maxAngle);
 
 		if (Input.GetKey (KeyCode.Q)) 
 
@@ -65,3 +82,4 @@ public class Bullet : MonoBehaviour {
 	
 	}
 }
+ 

@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class UFOHealth : MonoBehaviour {
+	
 	public Sprite[] lifeRingArray;
 	public Image lifeRing;
 	private int lifeRingCount = 12;
