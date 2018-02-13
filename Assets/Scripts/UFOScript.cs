@@ -9,13 +9,14 @@ public class UFOScript : MonoBehaviour {
 	public GameObject laserInstance;
 	public float Laser_Forward_Force;
 	public float laserTimer;
-
+	public AudioClip laser;
+	AudioSource audioSource;
 
 
 
 	// Use this for initialization
 	void Start () {
-		
+		audioSource = GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
@@ -34,7 +35,8 @@ public class UFOScript : MonoBehaviour {
 		if (laserTimer >= 3){
 		GameObject Temporary_Laser_Handler;
 		Temporary_Laser_Handler = Instantiate(laserInstance,laserSpawn.transform.position,laserSpawn.transform.rotation) as GameObject;
-			laserTimer = 3;
+		laserTimer = 3;
+
 		
 		//Sometimes bullets may appear rotated incorrectly due to the way its pivot was set from the original modeling package.
 		//This is EASILY corrected here, you might have to rotate it from a different axis and or angle based on your particular mesh.
@@ -47,7 +49,7 @@ public class UFOScript : MonoBehaviour {
 		//Tell the bullet to be "pushed" forward by an amount set by Bullet_Forward_Force.
 		//Temporary_RigidBody.AddForce(transform.forward * Laser_Forward_Force);
 			Temporary_RigidBody.AddForce(0, -8, -18, ForceMode.Impulse);
-		 
+			audioSource.PlayOneShot(laser, 1);
 
 		//Basic Clean Up, set the Bullets to self destruct after 10 Seconds, I am being VERY generous here, normally 3 seconds is plenty.
 			Destroy(Temporary_Laser_Handler, 4.0f);}

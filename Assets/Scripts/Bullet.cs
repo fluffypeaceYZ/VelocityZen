@@ -8,9 +8,14 @@ public class Bullet : MonoBehaviour {
 	public float Bullet_Forward_Force;
 	public float bulletTimer;
 	public float minAngle, maxAngle;
+	public AudioClip impact;
+	AudioSource audioSource;
 
 	// Use this for initialization
 	void Start () {
+
+		audioSource = GetComponent<AudioSource>();
+
 	
 	}
 
@@ -66,6 +71,8 @@ public class Bullet : MonoBehaviour {
 			GameObject Temporary_Bullet_Handler;
 			Temporary_Bullet_Handler = Instantiate(bulletInstance,bulletSpawn.transform.position,bulletSpawn.transform.rotation) as GameObject;
 			bulletTimer = 0.2f;
+			audioSource.PlayOneShot(impact, 1);
+
 			//Sometimes bullets may appear rotated incorrectly due to the way its pivot was set from the original modeling package.
 			//This is EASILY corrected here, you might have to rotate it from a different axis and or angle based on your particular mesh.
 			Temporary_Bullet_Handler.transform.Rotate(Vector3.left * 90);
