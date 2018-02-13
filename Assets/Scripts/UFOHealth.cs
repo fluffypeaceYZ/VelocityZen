@@ -54,6 +54,7 @@ public class UFOHealth : MonoBehaviour {
 
 		if (col.gameObject.tag == "Bullet") {
 
+
 			TakeDamage ();
 		}
 
