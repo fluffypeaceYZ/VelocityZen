@@ -10,12 +10,13 @@ public class UFOHealth : MonoBehaviour {
 	private int lifeRingCount = 12;
 	public GameObject lifeRingSpawn;
 	public GameObject lifeRingInstance;
+	public Canvas canvas;
 
 	// Use this for initialization
 	void Start () {
 		
 
-		lifeRingInstance = Instantiate (lifeRingInstance, lifeRingSpawn.transform.position, lifeRingSpawn.transform.rotation) as GameObject;
+
 		
 	}
 	
