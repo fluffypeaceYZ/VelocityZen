@@ -31,6 +31,8 @@ public class Bullet : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+	
+
 	transform.rotation = ClampRotationAroundXAxis(transform.rotation, minAngle, maxAngle);
 
 		if (Input.GetKey (KeyCode.Q)) 
