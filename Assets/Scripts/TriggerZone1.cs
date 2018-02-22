@@ -7,9 +7,13 @@ public class TriggerZone1 : MonoBehaviour {
 	public GameObject Player;
 	public GameObject UFOprefab;
 	public GameObject TriggerZone;
+	//UFOHealth UFOScript;
+	GameObject enemyUFOInstance;
+	bool canCreateTriggerZone;
+
 	// Use this for initialization
 	void Start () {
-		
+		canCreateTriggerZone = false;
 	}
 	
 	// Update is called once per frame
@@ -22,24 +26,33 @@ public class TriggerZone1 : MonoBehaviour {
 			GameObject TriggerInstance;
 
 		}*/
+		if(enemyUFOInstance == null) {
 
-		GameObject UFO = GameObject.Find("UFO_Unity");
-		UFOHealth UFOScript = UFO.GetComponent<UFOHealth>();
-	
-		if(UFOScript.numberofUFOs == 0) {
+			if(canCreateTriggerZone) {
+				print ("Create new trigger zone");
 
+				canCreateTriggerZone = false;
 
+				GameObject TriggerInstance;
+				TriggerInstance = Instantiate (TriggerZone, new Vector3 (Player.transform.position.x, Player.transform.position.y, Player.transform.position.z + 40), TriggerZone.transform.rotation) as GameObject;
+			}
 
+		}	 
 
-		}
 	}
 
 	void OnTriggerEnter(Collider other) {
 		if (other.gameObject.tag == "Player") {
 			print ("Collide");
-			GameObject enemyUFOInstance;
+
 			enemyUFOInstance =  Instantiate (UFOprefab, new Vector3 (Player.transform.position.x, Player.transform.position.y +14, Player.transform.position.z + 28), UFOprefab.transform.rotation) as GameObject;
-			 
+
+			canCreateTriggerZone = true;
+
+			//GameObject UFOLimit = GameObject.Find("UFO_Unity");
+
+			 //UFOScript = enemyUFOInstance.GetComponent<UFOHealth>();
+
 
 		}
 	}
