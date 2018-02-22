@@ -34,7 +34,7 @@ public class TriggerZone1 : MonoBehaviour {
 				canCreateTriggerZone = false;
 
 				GameObject TriggerInstance;
-				TriggerInstance = Instantiate (TriggerZone, new Vector3 (Player.transform.position.x, Player.transform.position.y, Player.transform.position.z + 40), TriggerZone.transform.rotation) as GameObject;
+				TriggerInstance = Instantiate (TriggerZone, new Vector3 (9, -1.5f, Player.transform.position.z + 80), TriggerZone.transform.rotation) as GameObject;
 			}
 
 		}	 
