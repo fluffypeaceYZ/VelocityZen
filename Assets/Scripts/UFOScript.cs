@@ -29,13 +29,13 @@ public class UFOScript : MonoBehaviour {
 		laserTimer -= Time.deltaTime;
 		if (laserTimer <=0){
 
-			laserTimer = 3;
+			laserTimer = 2;
 		}
 		 
-		if (laserTimer >= 3){
+		if (laserTimer >= 2){
 		GameObject Temporary_Laser_Handler;
 		Temporary_Laser_Handler = Instantiate(laserInstance,laserSpawn.transform.position,laserSpawn.transform.rotation) as GameObject;
-		laserTimer = 3;
+		laserTimer = 2;
 
 		
 		//Sometimes bullets may appear rotated incorrectly due to the way its pivot was set from the original modeling package.
