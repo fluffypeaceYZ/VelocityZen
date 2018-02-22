@@ -6,6 +6,7 @@ public class TriggerZone1 : MonoBehaviour {
 
 	public GameObject Player;
 	public GameObject UFOprefab;
+	public GameObject TriggerZone;
 	// Use this for initialization
 	void Start () {
 		
@@ -13,7 +14,24 @@ public class TriggerZone1 : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+		/*GameObject UFOLimit = GameObject.FindWithTag("UFO").GetComponent<UFOHealth>();
+
+		if (UFOHealth.numberofUFOs == 0) {
 		
+			GameObject TriggerInstance;
+
+		}*/
+
+		GameObject UFO = GameObject.Find("UFO_Unity");
+		UFOHealth UFOScript = UFO.GetComponent<UFOHealth>();
+	
+		if(UFOScript.numberofUFOs == 0) {
+
+
+
+
+		}
 	}
 
 	void OnTriggerEnter(Collider other) {

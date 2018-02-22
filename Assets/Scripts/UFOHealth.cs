@@ -11,7 +11,7 @@ public class UFOHealth : MonoBehaviour {
 	public GameObject lifeRingSpawn;
 	public GameObject lifeRingInstance;
 	public Canvas canvas;
-
+	public int numberofUFOs = 1;
 	// Use this for initialization
 	void Start () {
 		
@@ -45,6 +45,8 @@ public class UFOHealth : MonoBehaviour {
 			lifeRing.sprite = lifeRingArray [0];
 			Destroy (this.gameObject, 1); 
 			Destroy (lifeRing, 1);
+			numberofUFOs--;
+
 		}
 
 		lifeRing.sprite = lifeRingArray [lifeRingCount];
