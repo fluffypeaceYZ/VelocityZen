@@ -18,7 +18,7 @@ public class LaserUFO : MonoBehaviour {
 
 	void OnCollisionEnter (Collision col){
 			
-		if ((col.gameObject.tag == "Ground") || (col.gameObject.tag == "Player"))
+		if ((col.gameObject.tag == "Ground") || (col.gameObject.tag == "Player") || (col.gameObject.tag == "Shield"))
 
 		
 
