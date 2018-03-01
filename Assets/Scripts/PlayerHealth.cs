@@ -8,7 +8,9 @@ public class PlayerHealth : MonoBehaviour
 {
 	public GameObject GameOverScreen;
 	public Text HealthKits;
+	public Text Shields;
 	private int NumberofKits = 0;
+	private int NumberofShields = 0;
 	private int MaxNumberofKits = 99;
 	public Sprite[] healthBarArray;
 	public Image healthBar;
@@ -94,6 +96,16 @@ public class PlayerHealth : MonoBehaviour
 
 			NumberofKits+=1;
 			HealthKits.text = NumberofKits.ToString();
+			Destroy (other.gameObject);
+
+
+		}
+
+		if (other.gameObject.tag == "ShieldCharger") {
+
+
+			NumberofShields+=1;
+			Shields.text = NumberofShields.ToString();
 			Destroy (other.gameObject);
 
 
