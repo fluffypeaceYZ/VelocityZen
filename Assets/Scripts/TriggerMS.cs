@@ -40,9 +40,9 @@ public class TriggerMS : MonoBehaviour {
 	void OnTriggerEnter(Collider other) {
 		if (other.gameObject.tag == "Player") {
 			print ("TRIGGERMS COLLISION");
-			MedKitInstance =  Instantiate (MedKit, new Vector3 (Random.Range (-7,7), 0, Player.transform.position.z + Random.Range (100,300)), MedKit.transform.rotation) as GameObject;
-			ShieldChargerInstance = Instantiate (ShieldCharger, new Vector3 (Random.Range (-7,7), 0, Player.transform.position.z +  Random.Range (100,300)), ShieldCharger.transform.rotation) as GameObject;
-			canCreateTrigger = true; 
+			MedKitInstance =  Instantiate (MedKit, new Vector3 (Random.Range (-7,7), 0, Player.transform.position.z + Random.Range (100,150)), MedKit.transform.rotation) as GameObject;
+			ShieldChargerInstance = Instantiate (ShieldCharger, new Vector3 (Random.Range (-7,7), 0, Player.transform.position.z +  Random.Range (100,150)), ShieldCharger.transform.rotation) as GameObject;
+
 		}
 
 

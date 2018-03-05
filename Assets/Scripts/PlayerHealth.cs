@@ -33,7 +33,7 @@ public class PlayerHealth : MonoBehaviour
 			Shields.text = NumberofShields.ToString();
 		}
 
-		if (Input.GetKeyDown (KeyCode.G) && NumberofShields >= 1) {
+		if (Input.GetKeyDown (KeyCode.G) && NumberofShields >= 1 && (ShieldInstance == null)) {
 		
 	
 			ShieldInstance = Instantiate (Shield, new Vector3 (Player.transform.position.x, Player.transform.position.y+ 6, Player.transform.position.z + 4), Shield.transform.rotation) as GameObject;
