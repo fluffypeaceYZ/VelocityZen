@@ -103,7 +103,7 @@ public class PlayerHealth : MonoBehaviour
 
 	public void HealDamage(){
 
-		healthBarCount = 12;
+		healthBarCount = 11;
 		healthBar.sprite = healthBarArray [healthBarCount];
 	}
 
