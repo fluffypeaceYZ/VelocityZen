@@ -14,6 +14,10 @@ public class PlayerHealth : MonoBehaviour
 	private int MaxNumberofKits = 99;
 	public Sprite[] healthBarArray;
 	public Image healthBar;
+	GameObject ShieldInstance;
+	public GameObject Shield;
+	public GameObject Player;
+
 
 	private int healthBarCount;
 
@@ -24,6 +28,18 @@ public class PlayerHealth : MonoBehaviour
 
 	void Update ()
 	{
+
+		if (Input.GetKeyDown (KeyCode.G) && NumberofShields >= 1) {
+		
+	
+			ShieldInstance = Instantiate (Shield, new Vector3 (Player.transform.position.x, Player.transform.position.y+ 6, Player.transform.position.z + 4), Shield.transform.rotation) as GameObject;
+		
+			NumberofShields--;
+			Shields.text = NumberofShields.ToString();
+			Destroy (ShieldInstance.gameObject, 20);
+		}
+
+	
 
 
 
