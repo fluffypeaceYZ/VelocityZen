@@ -11,7 +11,6 @@ public class PlayerHealth : MonoBehaviour
 	public Text Shields;
 	private int NumberofKits = 0;
 	private int NumberofShields = 0;
-	private int MaxNumberofKits = 99;
 	public Sprite[] healthBarArray;
 	public Image healthBar;
 	GameObject ShieldInstance;
@@ -28,6 +27,11 @@ public class PlayerHealth : MonoBehaviour
 
 	void Update ()
 	{
+
+		if (NumberofShields >= 99) {
+			NumberofShields = 99;
+			Shields.text = NumberofShields.ToString();
+		}
 
 		if (Input.GetKeyDown (KeyCode.G) && NumberofShields >= 1) {
 		
