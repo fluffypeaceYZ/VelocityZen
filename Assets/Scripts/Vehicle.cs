@@ -7,6 +7,8 @@ public class Vehicle : MonoBehaviour
     float UpperScreen = -7.4f;
 	public Material matHit;
 	public Color colRed;
+
+
 	 
     // Use this for initialization
     void Start()
@@ -25,13 +27,13 @@ public class Vehicle : MonoBehaviour
         transform.position += new Vector3(0, 0, 0.4f);
 
 
-        if (Input.GetKey(KeyCode.UpArrow))
+		if (Input.GetKey(KeyCode.UpArrow) || (Input.GetAxis("StrafingLeft") < 0))
 
         {
             transform.position -= new Vector3(0.2f, 0, 0);
         }
 
-        if (Input.GetKey(KeyCode.DownArrow))
+		if (Input.GetKey(KeyCode.DownArrow) || (Input.GetAxis("StrafingLeft") > 0))
 
         {
             transform.position += new Vector3(0.2f, 0, 0);

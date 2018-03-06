@@ -12,6 +12,7 @@ public class Bullet : MonoBehaviour {
 	AudioSource audioSource;
 
 
+
 	// Use this for initialization
 	void Start () {
 
@@ -41,7 +42,7 @@ public class Bullet : MonoBehaviour {
 
 	transform.rotation = ClampRotationAroundXAxis(transform.rotation, minAngle, maxAngle);
 
-		if (Input.GetKey (KeyCode.Q)) 
+		if (Input.GetKey (KeyCode.Q) || (Input.GetAxis("CannonRight") < 0)) 
 
 		{
 			transform.Rotate(Vector3.left * Time.deltaTime * CannonSpeed);
@@ -52,7 +53,7 @@ public class Bullet : MonoBehaviour {
 
 
 
-		if (Input.GetKey (KeyCode.A))
+		if (Input.GetKey (KeyCode.A) || (Input.GetAxis("CannonRight") > 0)) 
 
 		{
 			transform.Rotate(Vector3.right * Time.deltaTime * CannonSpeed);

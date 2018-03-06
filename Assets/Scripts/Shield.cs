@@ -6,6 +6,7 @@ public class Shield : MonoBehaviour {
 	float BottomScreen = 10f;
 	float UpperScreen = -7.4f;
 
+
 	 
 	// Use this for initialization
 	void Start () {
@@ -24,13 +25,13 @@ public class Shield : MonoBehaviour {
 
 
 
-		if (Input.GetKey(KeyCode.UpArrow))
+		if (Input.GetKey(KeyCode.UpArrow) || (Input.GetAxis("StrafingLeft") < 0))
 
 		{
 			transform.position -= new Vector3(0.2f, 0, 0);
 		}
 
-		if (Input.GetKey(KeyCode.DownArrow))
+		if (Input.GetKey(KeyCode.DownArrow) || (Input.GetAxis("StrafingLeft") > 0))
 
 		{
 			transform.position += new Vector3(0.2f, 0, 0);
