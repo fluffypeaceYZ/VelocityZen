@@ -11,6 +11,7 @@ public class Bullet : MonoBehaviour {
 	public AudioClip impact;
 	AudioSource audioSource;
 
+
 	// Use this for initialization
 	void Start () {
 
@@ -65,7 +66,7 @@ public class Bullet : MonoBehaviour {
 			bulletTimer = 0;
 		}
 	
-		if (Input.GetKey(KeyCode.Tab) && bulletTimer == 0)
+		if (Input.GetKey(KeyCode.Tab) || (Input.GetKey (KeyCode.JoystickButton5)) && bulletTimer == 0)
 			
 		{
 			GameObject Temporary_Bullet_Handler;
