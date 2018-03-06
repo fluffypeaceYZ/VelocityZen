@@ -16,6 +16,10 @@ public class PlayerHealth : MonoBehaviour
 	GameObject ShieldInstance;
 	public GameObject Shield;
 	public GameObject Player;
+	public AudioClip crystal;
+	AudioSource audioSource;
+
+
 
 
 	private int healthBarCount;
@@ -23,6 +27,7 @@ public class PlayerHealth : MonoBehaviour
 	void Start () 
 	{
 		healthBarCount = healthBarArray.Length-1;
+		audioSource = GetComponent<AudioSource>();
 	}
 
 	void Update ()
@@ -35,7 +40,8 @@ public class PlayerHealth : MonoBehaviour
 
 		if (Input.GetKeyDown (KeyCode.G) && NumberofShields >= 1 && (ShieldInstance == null)) {
 		
-	
+			audioSource.PlayOneShot(crystal, 1);
+
 			ShieldInstance = Instantiate (Shield, new Vector3 (Player.transform.position.x, Player.transform.position.y+ 6, Player.transform.position.z + 4), Shield.transform.rotation) as GameObject;
 		
 			NumberofShields--;
