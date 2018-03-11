@@ -21,9 +21,9 @@ public class Background : MonoBehaviour {
 		if (other.gameObject.tag == "Player") {
 			print ("New Background");
 			GameObject roadInstance;
-			roadInstance = Instantiate (Road, new Vector3 (0, 0, Player.transform.position.z + 1452.5f), Road.transform.rotation) as GameObject;
+			roadInstance = Instantiate (Road, new Vector3 (0, 0, Player.transform.position.z + 1452.6f), Road.transform.rotation) as GameObject;
 			GameObject fenceInstance;
-			fenceInstance = Instantiate (Fence, new Vector3 (Fence.transform.position.x, Fence.transform.position.y, Player.transform.position.z + 1460), Fence.transform.rotation) as GameObject;
+			fenceInstance = Instantiate (Fence, new Vector3 (-7.3f, 3, Player.transform.position.z + 1461.6f), Fence.transform.rotation) as GameObject;
 			 
 		}
 	}
