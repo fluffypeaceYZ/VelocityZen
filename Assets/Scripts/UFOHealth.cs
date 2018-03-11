@@ -11,10 +11,14 @@ public class UFOHealth : MonoBehaviour {
 	public GameObject lifeRingSpawn;
 	public GameObject lifeRingInstance;
 	public Canvas canvas;
+	public ParticleSystem explosion;
+	public AudioClip ufoExplosion;
+	AudioSource audioSource;
+
 	// Use this for initialization
 	void Start () {
 		
-
+		audioSource = GetComponent<AudioSource>();
 
 		
 	}
@@ -46,7 +50,9 @@ public class UFOHealth : MonoBehaviour {
 		if (lifeRingCount == 0){
 
 			lifeRing.sprite = lifeRingArray [0];
-			Destroy (this.gameObject, 1); 
+			audioSource.PlayOneShot(ufoExplosion, 0.5f);
+			explosion.Play ();
+			Destroy (this.gameObject, 2); 
 			Destroy (lifeRing, 1);
 		}
 
