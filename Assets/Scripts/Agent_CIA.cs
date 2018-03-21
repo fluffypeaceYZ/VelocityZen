@@ -19,17 +19,30 @@ public class Agent_CIA : MonoBehaviour {
 	public float agentBulletTimer;
 	public AudioClip AgentBullet;
 	AudioSource audioSource;
+	public Rigidbody rb;
 
 	// Use this for initialization
 	void Start () {
 
+		rb = GetComponent<Rigidbody> ();
 		audioSource = GetComponent<AudioSource>();
 		animation = gameObject.GetComponent<Animation>();
 		
 	}
-	
+
+
+
 	// Update is called once per frame
 	void Update () {
+
+		if (lifeRingCount <= 2) {
+
+			rb.isKinematic = false; 
+			rb.detectCollisions = true;
+
+		}
+
+
 
 		animation.Play("walkbackwards");
 
