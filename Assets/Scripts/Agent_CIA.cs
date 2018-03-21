@@ -13,10 +13,17 @@ public class Agent_CIA : MonoBehaviour {
 	public GameObject lifeRingInstance;
 	public Canvas canvas;
 	public float AgentSpeed;
+	public GameObject agentBulletSpawn;
+	public GameObject agentBulletInstance;
+	public float agentBullet_Forward_Force;
+	public float agentBulletTimer;
+	public AudioClip AgentBullet;
+	AudioSource audioSource;
 
 	// Use this for initialization
 	void Start () {
 
+		audioSource = GetComponent<AudioSource>();
 		animation = gameObject.GetComponent<Animation>();
 		
 	}
@@ -40,10 +47,39 @@ public class Agent_CIA : MonoBehaviour {
 
 		
 		}
+
+		agentBulletTimer -= Time.deltaTime;
+		 
+
+
+		if (agentBulletTimer <= 0){
+			GameObject Temporary_AgentBullet_Handler;
+			Temporary_AgentBullet_Handler = Instantiate(agentBulletInstance,agentBulletSpawn.transform.position,agentBulletSpawn.transform.rotation) as GameObject;
+			agentBulletTimer = Random.Range (4, 1);
+
+
+			//Sometimes bullets may appear rotated incorrectly due to the way its pivot was set from the original modeling package.
+			//This is EASILY corrected here, you might have to rotate it from a different axis and or angle based on your particular mesh.
+			Temporary_AgentBullet_Handler.transform.Rotate(Vector3.left * 90);
+
+			//Retrieve the Rigidbody component from the instantiated Bullet and control it.
+			Rigidbody Temporary_RigidBody;
+			Temporary_RigidBody = Temporary_AgentBullet_Handler.GetComponent<Rigidbody>();
+
+			//Tell the bullet to be "pushed" forward by an amount set by Bullet_Forward_Force.
+			//Temporary_RigidBody.AddForce(transform.forward * Laser_Forward_Force);
+			Temporary_RigidBody.AddForce(0, -3, -13, ForceMode.Impulse);
+			audioSource.PlayOneShot(AgentBullet, 1);
+
+			//Basic Clean Up, set the Bullets to self destruct after 10 Seconds, I am being VERY generous here, normally 3 seconds is plenty.
+			Destroy(Temporary_AgentBullet_Handler, 4.0f);}
+
+
 	}
 
 	public void TakeDamage2()
 	{
+
 		if(lifeRingCount > 0) lifeRingCount-=2;
 
 		//Ternary operator

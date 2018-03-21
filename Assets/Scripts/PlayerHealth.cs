@@ -80,7 +80,7 @@ public class PlayerHealth : MonoBehaviour
 
 		if (Input.GetKeyDown (KeyCode.P))
 		{
-			TakeDamage ();
+			TakeDamage1 ();
 
 
 		}
@@ -94,7 +94,20 @@ public class PlayerHealth : MonoBehaviour
 
 	}
 
-	public void TakeDamage()
+	public void TakeDamage1()
+	{
+		healthBarCount--;
+
+		if (healthBarCount <= 0){
+
+			healthBar.sprite = healthBarArray [0];
+			GameOver ();
+		}
+
+		healthBar.sprite = healthBarArray [healthBarCount];
+	}
+
+	public void TakeDamage2()
 	{
 		healthBarCount-=2;
 
@@ -140,12 +153,18 @@ public class PlayerHealth : MonoBehaviour
 
 	void OnCollisionEnter (Collision col){
 
-			if (col.gameObject.tag == "LaserUFO") {
+		if (col.gameObject.tag == "LaserUFO") {
 
-			TakeDamage ();
-			}
+			TakeDamage2 ();
+		}
 
+		if (col.gameObject.tag == "AgentBullet") {
+
+			TakeDamage1 ();
+		}
 	}
+
+
 
 	void GameOver()
 	{
