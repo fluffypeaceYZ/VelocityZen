@@ -1,0 +1,1155 @@
+fileFormatVersion: 2
+guid: 9c846b57dd78d2442a53be14092b2b60
+timeCreated: 1521594174
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Agent-C_002
+    100002: //RootNode
+    100004: Bip_Agent-C001
+    100006: Bip_Agent-C001 Footsteps
+    100008: Bip_Agent-C001 Head
+    100010: Bip_Agent-C001 HeadNub
+    100012: Bip_Agent-C001 L Calf
+    100014: Bip_Agent-C001 L Clavicle
+    100016: Bip_Agent-C001 L Finger0
+    100018: Bip_Agent-C001 L Finger01
+    100020: Bip_Agent-C001 L Finger02
+    100022: Bip_Agent-C001 L Finger0Nub
+    100024: Bip_Agent-C001 L Finger1
+    100026: Bip_Agent-C001 L Finger11
+    100028: Bip_Agent-C001 L Finger12
+    100030: Bip_Agent-C001 L Finger1Nub
+    100032: Bip_Agent-C001 L Finger2
+    100034: Bip_Agent-C001 L Finger21
+    100036: Bip_Agent-C001 L Finger22
+    100038: Bip_Agent-C001 L Finger2Nub
+    100040: Bip_Agent-C001 L Finger3
+    100042: Bip_Agent-C001 L Finger31
+    100044: Bip_Agent-C001 L Finger32
+    100046: Bip_Agent-C001 L Finger3Nub
+    100048: Bip_Agent-C001 L Finger4
+    100050: Bip_Agent-C001 L Finger41
+    100052: Bip_Agent-C001 L Finger42
+    100054: Bip_Agent-C001 L Finger4Nub
+    100056: Bip_Agent-C001 L Foot
+    100058: Bip_Agent-C001 L Forearm
+    100060: Bip_Agent-C001 L Hand
+    100062: Bip_Agent-C001 L Thigh
+    100064: Bip_Agent-C001 L Toe0
+    100066: Bip_Agent-C001 L Toe0Nub
+    100068: Bip_Agent-C001 L UpperArm
+    100070: Bip_Agent-C001 Neck
+    100072: Bip_Agent-C001 Pelvis
+    100074: Bip_Agent-C001 R Calf
+    100076: Bip_Agent-C001 R Clavicle
+    100078: Bip_Agent-C001 R Finger0
+    100080: Bip_Agent-C001 R Finger01
+    100082: Bip_Agent-C001 R Finger02
+    100084: Bip_Agent-C001 R Finger0Nub
+    100086: Bip_Agent-C001 R Finger1
+    100088: Bip_Agent-C001 R Finger11
+    100090: Bip_Agent-C001 R Finger12
+    100092: Bip_Agent-C001 R Finger1Nub
+    100094: Bip_Agent-C001 R Finger2
+    100096: Bip_Agent-C001 R Finger21
+    100098: Bip_Agent-C001 R Finger22
+    100100: Bip_Agent-C001 R Finger2Nub
+    100102: Bip_Agent-C001 R Finger3
+    100104: Bip_Agent-C001 R Finger31
+    100106: Bip_Agent-C001 R Finger32
+    100108: Bip_Agent-C001 R Finger3Nub
+    100110: Bip_Agent-C001 R Finger4
+    100112: Bip_Agent-C001 R Finger41
+    100114: Bip_Agent-C001 R Finger42
+    100116: Bip_Agent-C001 R Finger4Nub
+    100118: Bip_Agent-C001 R Foot
+    100120: Bip_Agent-C001 R Forearm
+    100122: Bip_Agent-C001 R Hand
+    100124: Bip_Agent-C001 R Thigh
+    100126: Bip_Agent-C001 R Toe0
+    100128: Bip_Agent-C001 R Toe0Nub
+    100130: Bip_Agent-C001 R UpperArm
+    100132: Bip_Agent-C001 Spine
+    100134: Bip_Agent-C001 Spine1
+    100136: Bip_Agent-C001 Spine2
+    100138: Bip_Agent-C001 Spine3
+    100140: Bip_Suit-ManB Jaw001
+    100142: Bip_Suit-ManB JawNib001
+    100144: Dummy_Agent-C_002
+    100146: Glasses_Blackout_002
+    100148: Glock9mm_002
+    100150: HeadHigh_E_002
+    100152: Omni01
+    400000: Agent-C_002
+    400002: //RootNode
+    400004: Bip_Agent-C001
+    400006: Bip_Agent-C001 Footsteps
+    400008: Bip_Agent-C001 Head
+    400010: Bip_Agent-C001 HeadNub
+    400012: Bip_Agent-C001 L Calf
+    400014: Bip_Agent-C001 L Clavicle
+    400016: Bip_Agent-C001 L Finger0
+    400018: Bip_Agent-C001 L Finger01
+    400020: Bip_Agent-C001 L Finger02
+    400022: Bip_Agent-C001 L Finger0Nub
+    400024: Bip_Agent-C001 L Finger1
+    400026: Bip_Agent-C001 L Finger11
+    400028: Bip_Agent-C001 L Finger12
+    400030: Bip_Agent-C001 L Finger1Nub
+    400032: Bip_Agent-C001 L Finger2
+    400034: Bip_Agent-C001 L Finger21
+    400036: Bip_Agent-C001 L Finger22
+    400038: Bip_Agent-C001 L Finger2Nub
+    400040: Bip_Agent-C001 L Finger3
+    400042: Bip_Agent-C001 L Finger31
+    400044: Bip_Agent-C001 L Finger32
+    400046: Bip_Agent-C001 L Finger3Nub
+    400048: Bip_Agent-C001 L Finger4
+    400050: Bip_Agent-C001 L Finger41
+    400052: Bip_Agent-C001 L Finger42
+    400054: Bip_Agent-C001 L Finger4Nub
+    400056: Bip_Agent-C001 L Foot
+    400058: Bip_Agent-C001 L Forearm
+    400060: Bip_Agent-C001 L Hand
+    400062: Bip_Agent-C001 L Thigh
+    400064: Bip_Agent-C001 L Toe0
+    400066: Bip_Agent-C001 L Toe0Nub
+    400068: Bip_Agent-C001 L UpperArm
+    400070: Bip_Agent-C001 Neck
+    400072: Bip_Agent-C001 Pelvis
+    400074: Bip_Agent-C001 R Calf
+    400076: Bip_Agent-C001 R Clavicle
+    400078: Bip_Agent-C001 R Finger0
+    400080: Bip_Agent-C001 R Finger01
+    400082: Bip_Agent-C001 R Finger02
+    400084: Bip_Agent-C001 R Finger0Nub
+    400086: Bip_Agent-C001 R Finger1
+    400088: Bip_Agent-C001 R Finger11
+    400090: Bip_Agent-C001 R Finger12
+    400092: Bip_Agent-C001 R Finger1Nub
+    400094: Bip_Agent-C001 R Finger2
+    400096: Bip_Agent-C001 R Finger21
+    400098: Bip_Agent-C001 R Finger22
+    400100: Bip_Agent-C001 R Finger2Nub
+    400102: Bip_Agent-C001 R Finger3
+    400104: Bip_Agent-C001 R Finger31
+    400106: Bip_Agent-C001 R Finger32
+    400108: Bip_Agent-C001 R Finger3Nub
+    400110: Bip_Agent-C001 R Finger4
+    400112: Bip_Agent-C001 R Finger41
+    400114: Bip_Agent-C001 R Finger42
+    400116: Bip_Agent-C001 R Finger4Nub
+    400118: Bip_Agent-C001 R Foot
+    400120: Bip_Agent-C001 R Forearm
+    400122: Bip_Agent-C001 R Hand
+    400124: Bip_Agent-C001 R Thigh
+    400126: Bip_Agent-C001 R Toe0
+    400128: Bip_Agent-C001 R Toe0Nub
+    400130: Bip_Agent-C001 R UpperArm
+    400132: Bip_Agent-C001 Spine
+    400134: Bip_Agent-C001 Spine1
+    400136: Bip_Agent-C001 Spine2
+    400138: Bip_Agent-C001 Spine3
+    400140: Bip_Suit-ManB Jaw001
+    400142: Bip_Suit-ManB JawNib001
+    400144: Dummy_Agent-C_002
+    400146: Glasses_Blackout_002
+    400148: Glock9mm_002
+    400150: HeadHigh_E_002
+    400152: Omni01
+    2100000: Eyes_A
+    2100002: HeadHi_E
+    2100004: Mouth_Int
+    2100006: Teeth_Alpha
+    2100008: Suit_PS2
+    2100010: Tr2_PS2
+    2100012: M7
+    2100014: Hands_06
+    2100016: 20 - Default
+    2100018: 21 - Default
+    2100020: No Name
+    2300000: Bip_Suit-ManB Jaw001
+    2300002: Bip_Suit-ManB JawNib001
+    2300004: Glasses_Blackout_002
+    2300006: Glock9mm_002
+    3300000: Bip_Suit-ManB Jaw001
+    3300002: Bip_Suit-ManB JawNib001
+    3300004: Glasses_Blackout_002
+    3300006: Glock9mm_002
+    4300000: HeadHigh_E_002
+    4300002: Agent-C_002
+    4300004: Glock9mm_002
+    4300006: Glasses_Blackout_002
+    4300008: Bip_Suit-ManB Jaw001
+    4300010: Bip_Suit-ManB JawNib001
+    7400000: walkbackwards
+    9500000: //RootNode
+    10800000: Omni01
+    13700000: Agent-C_002
+    13700002: HeadHigh_E_002
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 20 - Default
+    second: {fileID: 2100000, guid: 7166e010942fd404982a4f9a588acfd3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 21 - Default
+    second: {fileID: 2100000, guid: 25419881b996ac8479d098018f513cd4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Eyes_A
+    second: {fileID: 2100000, guid: 9c49ae2c2ec9c454cb026f91b2882ff8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hands_06
+    second: {fileID: 2100000, guid: 6bffa8df87c8071428b51973b9baf75f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HeadHi_E
+    second: {fileID: 2100000, guid: 1c60ef40c2f4ae34494194a97f732131, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M7
+    second: {fileID: 2100000, guid: 70bdf3c2c1eddb949b8656437812684f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mouth_Int
+    second: {fileID: 2100000, guid: 6e7dbfc062d250843bf6d372a9273241, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: 83c9fd617a8c96642984f6447ac5afc0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Suit_PS2
+    second: {fileID: 2100000, guid: 5cf9c658665ffa442804adabfce78244, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Teeth_Alpha
+    second: {fileID: 2100000, guid: c5b0465fe813bf149984ee23e9e6cdd4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tr2_PS2
+    second: {fileID: 2100000, guid: ed1b026584a076d4c9f89a9acde57918, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 0
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: walkbackwards
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 78
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human:
+    - boneName: Bip_Agent-C001 Pelvis
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip_Agent-C001 L Thigh
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip_Agent-C001 R Thigh
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip_Agent-C001 L Calf
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip_Agent-C001 R Calf
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip_Agent-C001 L Foot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip_Agent-C001 R Foot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip_Agent-C001 Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip_Agent-C001 Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip_Agent-C001 Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip_Agent-C001 Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip_Agent-C001 L Clavicle
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip_Agent-C001 R Clavicle
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip_Agent-C001 L UpperArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip_Agent-C001 R UpperArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip_Agent-C001 L Forearm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip_Agent-C001 R Forearm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip_Agent-C001 L Hand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip_Agent-C001 R Hand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip_Agent-C001 L Toe0
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip_Agent-C001 R Toe0
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip_Agent-C001 L Finger0
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip_Agent-C001 L Finger01
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip_Agent-C001 L Finger02
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip_Agent-C001 L Finger1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip_Agent-C001 L Finger11
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip_Agent-C001 L Finger12
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip_Agent-C001 L Finger2
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip_Agent-C001 L Finger21
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip_Agent-C001 L Finger22
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip_Agent-C001 L Finger3
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip_Agent-C001 L Finger31
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip_Agent-C001 L Finger32
+      humanName: Left Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip_Agent-C001 L Finger4
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip_Agent-C001 L Finger41
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip_Agent-C001 L Finger42
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip_Agent-C001 R Finger0
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip_Agent-C001 R Finger01
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip_Agent-C001 R Finger02
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip_Agent-C001 R Finger1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip_Agent-C001 R Finger11
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip_Agent-C001 R Finger12
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip_Agent-C001 R Finger2
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip_Agent-C001 R Finger21
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip_Agent-C001 R Finger22
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip_Agent-C001 R Finger3
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip_Agent-C001 R Finger31
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip_Agent-C001 R Finger32
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip_Agent-C001 R Finger4
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip_Agent-C001 R Finger41
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip_Agent-C001 R Finger42
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip_Agent-C001 Spine2
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Agent_CIA(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0.032913543, y: -0.061417375, z: -0.0026917695, w: 0.99756575}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Agent-C_002
+      parentName: Agent_CIA(Clone)
+      position: {x: -5.6109776, y: 0.00005056282, z: -0.024879426}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Dummy_Agent-C_002
+      parentName: Agent_CIA(Clone)
+      position: {x: -5.6109924, y: 0, z: 0}
+      rotation: {x: -0.6532815, y: 0.27059802, z: 0.27059802, w: 0.6532815}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bip_Agent-C001
+      parentName: Dummy_Agent-C_002
+      position: {x: 3.6915257, y: -3.6915255, z: 0.99677145}
+      rotation: {x: -0.000000013907154, y: -0.0000000057605174, z: 0.38268262, w: 0.92387986}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: Bip_Agent-C001 Footsteps
+      parentName: Bip_Agent-C001
+      position: {x: -0, y: 0.000000029802322, z: -0.9692845}
+      rotation: {x: 0.000000010644079, y: 0.00000001064406, z: -0.7071062, w: 0.70710737}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bip_Agent-C001 Pelvis
+      parentName: Bip_Agent-C001
+      position: {x: 0.04788793, y: -0.38729072, z: 0.00051801227}
+      rotation: {x: 0.5, y: -0.5, z: -0.5, w: -0.5}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000002}
+    - name: Bip_Agent-C001 Spine
+      parentName: Bip_Agent-C001 Pelvis
+      position: {x: -0.09968579, y: -0.00008105566, z: 0.004838437}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000004, y: 1.0000006, z: 1.0000005}
+    - name: Bip_Agent-C001 L Thigh
+      parentName: Bip_Agent-C001 Spine
+      position: {x: 0.08620143, y: 0.054419994, z: 0.07909647}
+      rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
+      scale: {x: 0.9999998, y: 0.99999934, z: 0.9999999}
+    - name: Bip_Agent-C001 L Calf
+      parentName: Bip_Agent-C001 L Thigh
+      position: {x: -0.41774696, y: 0.00000017229468, z: -0.000000029802322}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000006, y: 1.0000007, z: 1.0000006}
+    - name: Bip_Agent-C001 L Foot
+      parentName: Bip_Agent-C001 L Calf
+      position: {x: -0.42685705, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999999, y: 0.9999996, z: 0.9999996}
+    - name: Bip_Agent-C001 L Toe0
+      parentName: Bip_Agent-C001 L Foot
+      position: {x: -0.141878, y: 0.17385687, z: -0.000000029802322}
+      rotation: {x: 0, y: 0, z: 0.7071068, w: -0.7071068}
+      scale: {x: 1.0000008, y: 0.9999997, z: 1.0000004}
+    - name: Bip_Agent-C001 L Toe0Nub
+      parentName: Bip_Agent-C001 L Toe0
+      position: {x: -0.09808791, y: 0, z: 0.000000029802322}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: -1, y: -1, z: -1}
+    - name: Bip_Agent-C001 R Thigh
+      parentName: Bip_Agent-C001 Spine
+      position: {x: 0.10133636, y: 0.013244927, z: -0.08878666}
+      rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
+      scale: {x: 1.0000011, y: 1.0000002, z: 1.0000008}
+    - name: Bip_Agent-C001 R Calf
+      parentName: Bip_Agent-C001 R Thigh
+      position: {x: -0.4177472, y: 0.00000017881393, z: 0.000000029802322}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999994, y: 1.0000005, z: 1}
+    - name: Bip_Agent-C001 R Foot
+      parentName: Bip_Agent-C001 R Calf
+      position: {x: -0.42685705, y: -0.00000036880374, z: -0.000000029802322}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000005, y: 1, z: 1.0000001}
+    - name: Bip_Agent-C001 R Toe0
+      parentName: Bip_Agent-C001 R Foot
+      position: {x: -0.14187798, y: 0.17385706, z: -0.000000029802322}
+      rotation: {x: 0, y: 0, z: 0.7071068, w: -0.7071068}
+      scale: {x: 1.0000002, y: 0.9999998, z: 1.0000002}
+    - name: Bip_Agent-C001 R Toe0Nub
+      parentName: Bip_Agent-C001 R Toe0
+      position: {x: -0.098088056, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999994, y: 1, z: 1}
+    - name: Bip_Agent-C001 Spine1
+      parentName: Bip_Agent-C001 Spine
+      position: {x: -0.112778425, y: -0.00008961558, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000005, y: 1.0000005, z: 1.0000008}
+    - name: Bip_Agent-C001 Spine2
+      parentName: Bip_Agent-C001 Spine1
+      position: {x: -0.11279023, y: -0.00006531179, z: 0.00006183982}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000007, y: 1.000001, z: 1.0000001}
+    - name: Bip_Agent-C001 Spine3
+      parentName: Bip_Agent-C001 Spine2
+      position: {x: -0.11278701, y: -0.00008994341, z: -0.000000059604645}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000006, y: 1.0000007, z: 1}
+    - name: Bip_Agent-C001 Neck
+      parentName: Bip_Agent-C001 Spine3
+      position: {x: -0.11278701, y: -0.000051617622, z: 0.00000014901161}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999744, y: 0.9999972, z: 0.9999981}
+    - name: Bip_Agent-C001 Head
+      parentName: Bip_Agent-C001 Neck
+      position: {x: -0.065069914, y: -0.000000029802322, z: -0.000000059604645}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000015, y: 1.0000018, z: 1.0000011}
+    - name: Bip_Agent-C001 HeadNub
+      parentName: Bip_Agent-C001 Head
+      position: {x: -0.23752606, y: -0.00000016391277, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: Glasses_Blackout_002
+      parentName: Bip_Agent-C001 Head
+      position: {x: -0.119951725, y: 0.059319228, z: -0.000000059604645}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999994, y: 1, z: 1.0000002}
+    - name: Bip_Suit-ManB Jaw001
+      parentName: Bip_Agent-C001 Head
+      position: {x: -0.011942148, y: 0.021313712, z: 0.00000011920929}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 1.0000004}
+    - name: Bip_Suit-ManB JawNib001
+      parentName: Bip_Suit-ManB Jaw001
+      position: {x: 0.000000059604645, y: -0.004177451, z: 0.113042}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bip_Agent-C001 L Clavicle
+      parentName: Bip_Agent-C001 Neck
+      position: {x: 0.024780035, y: 0.00007107854, z: 0.05379072}
+      rotation: {x: 0.7071068, y: -0.000000030908623, z: -0.7071068, w: 0.000000030908623}
+      scale: {x: 1.0000005, y: 1.0000019, z: 1.0000017}
+    - name: Bip_Agent-C001 L UpperArm
+      parentName: Bip_Agent-C001 L Clavicle
+      position: {x: -0.16444412, y: -0.00000014901161, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000011, y: 0.999999, z: 0.9999991}
+    - name: Bip_Agent-C001 L Forearm
+      parentName: Bip_Agent-C001 L UpperArm
+      position: {x: -0.28536323, y: -0.00000011920929, z: 0.00000011920929}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999976, y: 1.0000007, z: 1.0000004}
+    - name: Bip_Agent-C001 L Hand
+      parentName: Bip_Agent-C001 L Forearm
+      position: {x: -0.21785283, y: -0.00000023841858, z: -0.00000011920929}
+      rotation: {x: 0.7071068, y: 0, z: 0, w: -0.7071068}
+      scale: {x: 1.0000006, y: 1.0000006, z: 1.0000002}
+    - name: Bip_Agent-C001 L Finger0
+      parentName: Bip_Agent-C001 L Hand
+      position: {x: -0.03076005, y: 0.0047262907, z: -0.04490167}
+      rotation: {x: 0, y: 0.3826835, z: 0, w: -0.9238795}
+      scale: {x: 1.0000004, y: 1.0000001, z: 1.0000005}
+    - name: Bip_Agent-C001 L Finger01
+      parentName: Bip_Agent-C001 L Finger0
+      position: {x: -0.052859068, y: 0, z: -0.00000023841858}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000005, y: 1.0000005, z: 1}
+    - name: Bip_Agent-C001 L Finger02
+      parentName: Bip_Agent-C001 L Finger01
+      position: {x: -0.043878973, y: -0.00000023841858, z: 0.0000005662441}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000004, y: 1.0000005, z: 1}
+    - name: Bip_Agent-C001 L Finger0Nub
+      parentName: Bip_Agent-C001 L Finger02
+      position: {x: -0.029743016, y: 0, z: -0.00000017881393}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bip_Agent-C001 L Finger1
+      parentName: Bip_Agent-C001 L Hand
+      position: {x: -0.1007427, y: -0.009605885, z: -0.041302502}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000004, y: 1.0000005, z: 1.0000001}
+    - name: Bip_Agent-C001 L Finger11
+      parentName: Bip_Agent-C001 L Finger1
+      position: {x: -0.0394212, y: 0.000000059604645, z: 0.0000002682209}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999999, y: 1.0000001, z: 0.9999998}
+    - name: Bip_Agent-C001 L Finger12
+      parentName: Bip_Agent-C001 L Finger11
+      position: {x: -0.029249549, y: 0, z: -0.00000059604645}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999994, y: 0.99999964, z: 1}
+    - name: Bip_Agent-C001 L Finger1Nub
+      parentName: Bip_Agent-C001 L Finger12
+      position: {x: -0.035691142, y: -0.00000023841858, z: 0.00000017881393}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 0.9999999}
+    - name: Bip_Agent-C001 L Finger2
+      parentName: Bip_Agent-C001 L Hand
+      position: {x: -0.09845221, y: -0.005768597, z: -0.014559329}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000004, y: 0.99999887, z: 0.9999998}
+    - name: Bip_Agent-C001 L Finger21
+      parentName: Bip_Agent-C001 L Finger2
+      position: {x: -0.04163885, y: 0, z: -0.00000029802322}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000004, y: 1.0000012, z: 1}
+    - name: Bip_Agent-C001 L Finger22
+      parentName: Bip_Agent-C001 L Finger21
+      position: {x: -0.04163915, y: 0, z: 0.00000047683716}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000006, y: 0.9999995, z: 0.9999998}
+    - name: Bip_Agent-C001 L Finger2Nub
+      parentName: Bip_Agent-C001 L Finger22
+      position: {x: -0.04163891, y: 0.00000023841858, z: -0.00000017881393}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bip_Agent-C001 L Finger3
+      parentName: Bip_Agent-C001 L Hand
+      position: {x: -0.098192096, y: -0.0034335852, z: 0.0118998885}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000005, y: 1.0000004, z: 1.0000001}
+    - name: Bip_Agent-C001 L Finger31
+      parentName: Bip_Agent-C001 L Finger3
+      position: {x: -0.035690904, y: 0, z: -0.000000059604645}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 1.0000001}
+    - name: Bip_Agent-C001 L Finger32
+      parentName: Bip_Agent-C001 L Finger31
+      position: {x: -0.03569126, y: -0.00000011920929, z: 0.00000011920929}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000007, z: 1.0000001}
+    - name: Bip_Agent-C001 L Finger3Nub
+      parentName: Bip_Agent-C001 L Finger32
+      position: {x: -0.035691023, y: 0, z: 0.000000059604645}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bip_Agent-C001 L Finger4
+      parentName: Bip_Agent-C001 L Hand
+      position: {x: -0.098385096, y: -0.008220553, z: 0.03569764}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000002, y: 0.9999992, z: 1}
+    - name: Bip_Agent-C001 L Finger41
+      parentName: Bip_Agent-C001 L Finger4
+      position: {x: -0.029742956, y: 0.00000011920929, z: -0.000000059604645}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1.0000007, z: 1.0000004}
+    - name: Bip_Agent-C001 L Finger42
+      parentName: Bip_Agent-C001 L Finger41
+      position: {x: -0.029742956, y: 0, z: -0.000000059604645}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000005, y: 1.0000007, z: 1.0000005}
+    - name: Bip_Agent-C001 L Finger4Nub
+      parentName: Bip_Agent-C001 L Finger42
+      position: {x: -0.029743075, y: 0, z: -0.00000011920929}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: Bip_Agent-C001 R Clavicle
+      parentName: Bip_Agent-C001 Neck
+      position: {x: 0.024780035, y: 0.00007170439, z: -0.053791046}
+      rotation: {x: 0.7071068, y: -0.000000030908623, z: 0.7071068, w: -0.000000030908623}
+      scale: {x: 1.0000014, y: 1.0000012, z: 1.0000007}
+    - name: Bip_Agent-C001 R UpperArm
+      parentName: Bip_Agent-C001 R Clavicle
+      position: {x: -0.16444415, y: 0.00000029802322, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999997, y: 0.9999999, z: 0.99999976}
+    - name: Bip_Agent-C001 R Forearm
+      parentName: Bip_Agent-C001 R UpperArm
+      position: {x: -0.2853628, y: 0, z: 0.000000059604645}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999998, y: 0.99999976, z: 0.99999964}
+    - name: Bip_Agent-C001 R Hand
+      parentName: Bip_Agent-C001 R Forearm
+      position: {x: -0.21785301, y: 0, z: 0}
+      rotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+      scale: {x: 1.0000004, y: 1.0000013, z: 1.0000007}
+    - name: Glock9mm_002
+      parentName: Bip_Agent-C001 R Hand
+      position: {x: -0.10569087, y: 0.01650732, z: 0.057539344}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000004, y: 1.0000001, z: 1.0000001}
+    - name: Bip_Agent-C001 R Finger0
+      parentName: Bip_Agent-C001 R Hand
+      position: {x: -0.030760229, y: 0.004726231, z: 0.044901848}
+      rotation: {x: 0, y: 0.38268346, z: 0, w: 0.9238795}
+      scale: {x: 1.0000002, y: 1.0000007, z: 0.9999995}
+    - name: Bip_Agent-C001 R Finger01
+      parentName: Bip_Agent-C001 R Finger0
+      position: {x: -0.05285901, y: 0.000000029802322, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000004, y: 1.0000006, z: 1.0000005}
+    - name: Bip_Agent-C001 R Finger02
+      parentName: Bip_Agent-C001 R Finger01
+      position: {x: -0.04387927, y: -0.00000008940697, z: 0.00000011920929}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1.0000002, z: 1}
+    - name: Bip_Agent-C001 R Finger0Nub
+      parentName: Bip_Agent-C001 R Finger02
+      position: {x: -0.029742837, y: 0.000000044703484, z: -0.00000011920929}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: -1, y: -1, z: -1}
+    - name: Bip_Agent-C001 R Finger1
+      parentName: Bip_Agent-C001 R Hand
+      position: {x: -0.100743085, y: -0.009605892, z: 0.041302323}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1.0000002, z: 0.99999964}
+    - name: Bip_Agent-C001 R Finger11
+      parentName: Bip_Agent-C001 R Finger1
+      position: {x: -0.039420843, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000008, y: 1.0000008, z: 1.0000006}
+    - name: Bip_Agent-C001 R Finger12
+      parentName: Bip_Agent-C001 R Finger11
+      position: {x: -0.029249907, y: 0.000000059604645, z: -0.00000011920929}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000005, y: 1, z: 1.0000007}
+    - name: Bip_Agent-C001 R Finger1Nub
+      parentName: Bip_Agent-C001 R Finger12
+      position: {x: -0.035690993, y: -0.00000011920929, z: 0.00000011920929}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: -1, y: -1, z: -1.0000001}
+    - name: Bip_Agent-C001 R Finger2
+      parentName: Bip_Agent-C001 R Hand
+      position: {x: -0.09845194, y: -0.005768545, z: 0.014559269}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000011, y: 1.0000014, z: 0.99999994}
+    - name: Bip_Agent-C001 R Finger21
+      parentName: Bip_Agent-C001 R Finger2
+      position: {x: -0.04163897, y: 0.000000014901161, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000002, y: 0.9999989, z: 1.0000006}
+    - name: Bip_Agent-C001 R Finger22
+      parentName: Bip_Agent-C001 R Finger21
+      position: {x: -0.04163909, y: 0.000000059604645, z: -0.00000011920929}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000006, y: 1.0000017, z: 1.0000005}
+    - name: Bip_Agent-C001 R Finger2Nub
+      parentName: Bip_Agent-C001 R Finger22
+      position: {x: -0.04163891, y: 0, z: -0.00000011920929}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: -1, y: -1, z: -1}
+    - name: Bip_Agent-C001 R Finger3
+      parentName: Bip_Agent-C001 R Hand
+      position: {x: -0.09819189, y: -0.003433518, z: -0.01189971}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000011, y: 1.0000014, z: 0.9999997}
+    - name: Bip_Agent-C001 R Finger31
+      parentName: Bip_Agent-C001 R Finger3
+      position: {x: -0.035690784, y: 0.00000016391277, z: -0.00000011920929}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000005, y: 0.99999917, z: 1.0000005}
+    - name: Bip_Agent-C001 R Finger32
+      parentName: Bip_Agent-C001 R Finger31
+      position: {x: -0.035690933, y: -0.00000017881393, z: 0.00000011920929}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000008, z: 1.0000005}
+    - name: Bip_Agent-C001 R Finger3Nub
+      parentName: Bip_Agent-C001 R Finger32
+      position: {x: -0.035691172, y: 0.000000029802322, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: -1, y: -1, z: -1}
+    - name: Bip_Agent-C001 R Finger4
+      parentName: Bip_Agent-C001 R Hand
+      position: {x: -0.098385185, y: -0.008220576, z: -0.03569746}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999964, y: 0.9999995, z: 0.9999995}
+    - name: Bip_Agent-C001 R Finger41
+      parentName: Bip_Agent-C001 R Finger4
+      position: {x: -0.029742986, y: -0.000000059604645, z: 0.00000011920929}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000012, y: 1.0000007, z: 1.0000007}
+    - name: Bip_Agent-C001 R Finger42
+      parentName: Bip_Agent-C001 R Finger41
+      position: {x: -0.02974303, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999999, y: 0.99999964, z: 1.0000005}
+    - name: Bip_Agent-C001 R Finger4Nub
+      parentName: Bip_Agent-C001 R Finger42
+      position: {x: -0.029743195, y: 0.00000008940697, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: -1.0000001, y: -1.0000001, z: -1.0000001}
+    - name: HeadHigh_E_002
+      parentName: Agent_CIA(Clone)
+      position: {x: -5.6109924, y: -0.11512053, z: -0.024879426}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Omni01
+      parentName: Agent_CIA(Clone)
+      position: {x: -3.544001, y: 9.905191, z: 4.1666455}
+      rotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 1
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
