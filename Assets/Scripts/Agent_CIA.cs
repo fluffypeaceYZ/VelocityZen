@@ -9,10 +9,10 @@ public class Agent_CIA : MonoBehaviour {
 	public Sprite[] lifeRingArray;
 	public Image lifeRing;
 	private int lifeRingCount = 12;
-	public GameObject lifeRingSpawn;
+	public GameObject lifeRingSpawnAgent;
 	public GameObject lifeRingInstance;
 	public Canvas canvas;
-	public float AgentSpeed = 3f;
+	public float AgentSpeed;
 
 	// Use this for initialization
 	void Start () {
@@ -26,25 +26,25 @@ public class Agent_CIA : MonoBehaviour {
 
 		animation.Play("walkbackwards");
 
-		transform.position = new Vector3(Mathf.PingPong (Time.time * AgentSpeed, 8) -8, transform.position.y ,transform.position.z);
+		transform.position = new Vector3(Mathf.PingPong (Time.time * AgentSpeed, 7) -11, transform.position.y ,transform.position.z);
 
 		
 		transform.position += new Vector3(0, 0, 0.4f);
 
-		Vector3 lifeRingPos = Camera.main.WorldToScreenPoint (lifeRingSpawn.transform.position);
+		Vector3 lifeRingPos = Camera.main.WorldToScreenPoint (lifeRingSpawnAgent.transform.position);
 		lifeRing.transform.position = lifeRingPos;
 
-		if (Input.GetKeyDown (KeyCode.R)) {
+		if (Input.GetKeyDown (KeyCode.L)) {
 
-			TakeDamage3 ();
+			TakeDamage2 ();
 
 		
 		}
 	}
 
-	public void TakeDamage3()
+	public void TakeDamage2()
 	{
-		if(lifeRingCount > 0) lifeRingCount-=3;
+		if(lifeRingCount > 0) lifeRingCount-=2;
 
 		//Ternary operator
 		//lifeRingCount = (lifeRingCount > 0)? lifeRingCount--: 0;
@@ -65,7 +65,7 @@ public class Agent_CIA : MonoBehaviour {
 		if (col.gameObject.tag == "Bullet") {
 
 
-			TakeDamage3 ();
+			TakeDamage2 ();
 		}
 
 
