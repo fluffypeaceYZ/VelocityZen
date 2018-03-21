@@ -33,7 +33,7 @@ public class Agent_CIA : MonoBehaviour {
 
 		animation.Play("walkbackwards");
 
-		transform.position = new Vector3(Mathf.PingPong (Time.time * AgentSpeed, 7) -11, transform.position.y ,transform.position.z);
+		transform.position = new Vector3(Mathf.PingPong (Time.time * AgentSpeed, 8) -8, transform.position.y ,transform.position.z);
 
 		
 		transform.position += new Vector3(0, 0, 0.4f);
