@@ -50,8 +50,8 @@ public class TriggerZone1 : MonoBehaviour {
 			print ("Collide");
 
 			enemyUFOInstance =  Instantiate (UFOprefab, new Vector3 (Player.transform.position.x, Player.transform.position.y +14, Player.transform.position.z + 35), UFOprefab.transform.rotation) as GameObject;
-			ciaAgentInstanceUP =	Instantiate (ciaAgent, new Vector3 (-7, 0.3f, Player.transform.position.z +15), ciaAgent.transform.rotation) as GameObject;
-			ciaAgentInstanceDOWN =	Instantiate (downciaAgent, new Vector3 (-2, 0.3f, Player.transform.position.z +15), downciaAgent.transform.rotation) as GameObject;
+			ciaAgentInstanceUP =	Instantiate (ciaAgent, new Vector3 (-7, 0.3f, Player.transform.position.z + Random.Range (15, 25)), ciaAgent.transform.rotation) as GameObject;
+			ciaAgentInstanceDOWN =	Instantiate (downciaAgent, new Vector3 (-2, 0.3f, Player.transform.position.z + Random.Range (15, 25)), downciaAgent.transform.rotation) as GameObject;
 			canCreateTriggerZone = true;
 
 			//GameObject UFOLimit = GameObject.Find("UFO_Unity");
