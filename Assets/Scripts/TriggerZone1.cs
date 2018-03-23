@@ -7,7 +7,11 @@ public class TriggerZone1 : MonoBehaviour {
 	public GameObject Player;
 	public GameObject UFOprefab;
 	public GameObject TriggerZone;
+	public GameObject ciaAgent;
+	public GameObject downciaAgent;
 	//UFOHealth UFOScript;
+	GameObject ciaAgentInstanceUP;
+	GameObject ciaAgentInstanceDOWN;
 	GameObject enemyUFOInstance;
 	bool canCreateTriggerZone;
 
@@ -26,7 +30,7 @@ public class TriggerZone1 : MonoBehaviour {
 			GameObject TriggerInstance;
 
 		}*/
-		if(enemyUFOInstance == null) {
+		if((enemyUFOInstance == null) && (ciaAgentInstanceUP == null) && (ciaAgentInstanceDOWN == null)) {
 
 			if(canCreateTriggerZone) {
 				print ("Create new trigger zone");
@@ -45,8 +49,9 @@ public class TriggerZone1 : MonoBehaviour {
 		if (other.gameObject.tag == "Player") {
 			print ("Collide");
 
-			enemyUFOInstance =  Instantiate (UFOprefab, new Vector3 (Player.transform.position.x, Player.transform.position.y +14, Player.transform.position.z + 28), UFOprefab.transform.rotation) as GameObject;
-
+			enemyUFOInstance =  Instantiate (UFOprefab, new Vector3 (Player.transform.position.x, Player.transform.position.y +14, Player.transform.position.z + 35), UFOprefab.transform.rotation) as GameObject;
+			ciaAgentInstanceUP =	Instantiate (ciaAgent, new Vector3 (-7, 0.3f, Player.transform.position.z +15), ciaAgent.transform.rotation) as GameObject;
+			ciaAgentInstanceDOWN =	Instantiate (downciaAgent, new Vector3 (-2, 0.3f, Player.transform.position.z +15), downciaAgent.transform.rotation) as GameObject;
 			canCreateTriggerZone = true;
 
 			//GameObject UFOLimit = GameObject.Find("UFO_Unity");
