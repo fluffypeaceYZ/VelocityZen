@@ -87,7 +87,7 @@ public class PlayerHealth : MonoBehaviour
 
 		if (Input.GetKeyDown (KeyCode.Escape)) {
 
-			SceneManager.LoadScene ("Sneak_FPS");
+			SceneManager.LoadScene ("level_1");
 
 		}
 
@@ -168,7 +168,7 @@ public class PlayerHealth : MonoBehaviour
 
 	void GameOver()
 	{
-		GameOverScreen.SetActive (true);
+		SceneManager.LoadScene ("GameOver");
 	}
 }
 
