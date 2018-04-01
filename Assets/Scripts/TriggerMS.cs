@@ -33,7 +33,7 @@ public class TriggerMS : MonoBehaviour {
 			GameObject ShieldChargerInstance;
 			ShieldChargerInstance = Instantiate (ShieldCharger, new Vector3 (Random.Range (-7,7), 0, Player.transform.position.z +  Random.Range (100,300)), ShieldCharger.transform.rotation) as GameObject;
 			GameObject TriggerZoneMSInstance;
-			TriggerZoneMSInstance = Instantiate (TriggerZoneMS, new Vector3 (9, -1.5f, Player.transform.position.z + 1000), TriggerZoneMS.transform.rotation) as GameObject;
+			TriggerZoneMSInstance = Instantiate (TriggerZoneMS, new Vector3 (9, -1.5f, Player.transform.position.z + 700), TriggerZoneMS.transform.rotation) as GameObject;
 		}
 
 
