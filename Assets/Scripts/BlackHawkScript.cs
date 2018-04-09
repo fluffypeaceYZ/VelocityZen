@@ -16,10 +16,15 @@ public class BlackHawkScript : MonoBehaviour {
 	private int lifeRingCount = 12;
 	public GameObject lifeRingSpawnAgent;
 	public GameObject lifeRingInstance;
+	public AudioClip bhbullet;
+	public AudioClip bhrocket;
+	AudioSource audioSource;
 	 
 	private bool createdRocket = false;
 	// Use this for initialization
 	void Start () {
+
+		audioSource = GetComponent<AudioSource>();
 		
 	}
 	
@@ -46,6 +51,7 @@ public class BlackHawkScript : MonoBehaviour {
 			GameObject Temporary_bhbulletLeft_Handler;
 			Temporary_bhbulletLeft_Handler = Instantiate(bhbulletInstance,bhbulletSpawnLeft.transform.position,bhbulletSpawnLeft.transform.rotation) as GameObject;
 			bhbulletTimer  = 0.8f;
+			audioSource.PlayOneShot(bhbullet, 1);
 
 			Temporary_bhbulletRight_Handler.transform.Rotate(Vector3.left * 90);
 			Temporary_bhbulletLeft_Handler.transform.Rotate(Vector3.left * 90);
@@ -69,6 +75,7 @@ public class BlackHawkScript : MonoBehaviour {
 			GameObject Temporary_bhrocket_Handler;
 			Temporary_bhrocket_Handler = Instantiate(bhrocketInstance,bhrocketSpawn.transform.position,bhrocketSpawn.transform.rotation) as GameObject;
 			createdRocket = true;
+			audioSource.PlayOneShot(bhrocket, 1);
 			Temporary_bhrocket_Handler.transform.Rotate(Vector3.left * 360);
 
 			Rigidbody Temporary_RigidBodyRocket;
