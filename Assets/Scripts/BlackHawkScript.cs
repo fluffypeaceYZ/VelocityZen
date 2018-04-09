@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BlackHawkScript : MonoBehaviour {
 	public GameObject bhbulletSpawnRight;
@@ -8,8 +9,13 @@ public class BlackHawkScript : MonoBehaviour {
 	public GameObject bhbulletInstance;
 	public GameObject bhrocketSpawn;
 	public GameObject bhrocketInstance;
-	public float bhbulletTimer = 0.4f;
+	public float bhbulletTimer = 0.8f;
 	public float bhbulletSpend = 10f;
+	public Sprite[] lifeRingArray;
+	public Image lifeRing;
+	private int lifeRingCount = 12;
+	public GameObject lifeRingSpawnAgent;
+	public GameObject lifeRingInstance;
 	 
 	private bool createdRocket = false;
 	// Use this for initialization
@@ -20,6 +26,9 @@ public class BlackHawkScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+		Vector3 lifeRingPos = Camera.main.WorldToScreenPoint (lifeRingSpawnAgent.transform.position);
+		lifeRing.transform.position = lifeRingPos;
+
 		bhbulletTimer -= Time.deltaTime;
 		bhbulletSpend -= Time.deltaTime;
 	 
@@ -29,14 +38,14 @@ public class BlackHawkScript : MonoBehaviour {
 
 		transform.position += new Vector3(0, 0, 0.4f);
 
-		if ((bhbulletSpend >=5f) && (bhbulletTimer <= 0)){
+		if ((bhbulletSpend >=6f) && (bhbulletTimer <= 0)){
 
 
 			GameObject Temporary_bhbulletRight_Handler;
 			Temporary_bhbulletRight_Handler = Instantiate(bhbulletInstance,bhbulletSpawnRight.transform.position,bhbulletSpawnRight.transform.rotation) as GameObject;
 			GameObject Temporary_bhbulletLeft_Handler;
 			Temporary_bhbulletLeft_Handler = Instantiate(bhbulletInstance,bhbulletSpawnLeft.transform.position,bhbulletSpawnLeft.transform.rotation) as GameObject;
-			bhbulletTimer  = 0.4f;
+			bhbulletTimer  = 0.8f;
 
 			Temporary_bhbulletRight_Handler.transform.Rotate(Vector3.left * 90);
 			Temporary_bhbulletLeft_Handler.transform.Rotate(Vector3.left * 90);
@@ -56,7 +65,7 @@ public class BlackHawkScript : MonoBehaviour {
 
 		}
 
-		if ((bhbulletSpend <= 2.5f) && (createdRocket == false)){
+		if ((bhbulletSpend <= 3f) && (createdRocket == false)){
 			GameObject Temporary_bhrocket_Handler;
 			Temporary_bhrocket_Handler = Instantiate(bhrocketInstance,bhrocketSpawn.transform.position,bhrocketSpawn.transform.rotation) as GameObject;
 			createdRocket = true;
@@ -72,8 +81,39 @@ public class BlackHawkScript : MonoBehaviour {
 		
 		}
 
-		if (bhbulletSpend >= 2.5f) {
+		if (bhbulletSpend >= 3f) {
 			createdRocket = false;}
 		
 	}
+
+	public void TakeDamageBH()
+	{
+
+		if(lifeRingCount > 0) lifeRingCount-=1;
+
+		//Ternary operator
+		//lifeRingCount = (lifeRingCount > 0)? lifeRingCount--: 0;
+		//lifeRingCount = (condition)? true value : false value;
+
+		if (lifeRingCount == 0){
+
+			lifeRing.sprite = lifeRingArray [0];
+			Destroy (this.gameObject, 1); 
+			Destroy (lifeRing, 1);
+		}
+
+		lifeRing.sprite = lifeRingArray [lifeRingCount];
+	}
+
+	void OnCollisionEnter (Collision col){
+
+		if (col.gameObject.tag == "Bullet") {
+
+
+			TakeDamageBH ();
+		}
+
+	}
+
+
 }

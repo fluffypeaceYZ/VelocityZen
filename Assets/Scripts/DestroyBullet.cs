@@ -2,9 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LaserUFO : MonoBehaviour {
-
-
+public class DestroyBullet : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -14,20 +12,14 @@ public class LaserUFO : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
-	} 
+	}
 
 	void OnCollisionEnter (Collision col){
-			
-		if ((col.gameObject.tag == "Ground") || (col.gameObject.tag == "Player") || (col.gameObject.tag == "Shield"))
 
-		
+		if (col.gameObject.tag == "BlackHawk")
 
 		{
-			
-
-		
 			Destroy (this.gameObject);
 		}
 	}
 }
-
