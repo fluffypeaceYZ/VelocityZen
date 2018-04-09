@@ -6,8 +6,12 @@ public class BlackHawkScript : MonoBehaviour {
 	public GameObject bhbulletSpawnRight;
 	public GameObject bhbulletSpawnLeft;
 	public GameObject bhbulletInstance;
+	public GameObject bhrocketSpawn;
+	public GameObject bhrocketInstance;
 	public float bhbulletTimer = 0.4f;
 	public float bhbulletSpend = 10f;
+	 
+	private bool createdRocket = false;
 	// Use this for initialization
 	void Start () {
 		
@@ -18,6 +22,7 @@ public class BlackHawkScript : MonoBehaviour {
 
 		bhbulletTimer -= Time.deltaTime;
 		bhbulletSpend -= Time.deltaTime;
+	 
 		if (bhbulletSpend <= 0) {
 			bhbulletSpend = 10f;
 		}
@@ -42,14 +47,33 @@ public class BlackHawkScript : MonoBehaviour {
 			Rigidbody Temporary_RigidBodyLeft;
 			Temporary_RigidBodyLeft = Temporary_bhbulletLeft_Handler.GetComponent<Rigidbody>();
 
-			Temporary_RigidBodyRight.AddForce(0, -8, -18, ForceMode.Impulse);
-			Temporary_RigidBodyLeft.AddForce(0, -8, -18, ForceMode.Impulse);
+			Temporary_RigidBodyRight.AddForce(0, -4, -18, ForceMode.Impulse);
+			Temporary_RigidBodyLeft.AddForce(0, -4, -18, ForceMode.Impulse);
 
 			Destroy(Temporary_bhbulletRight_Handler, 4.0f);
 			Destroy(Temporary_bhbulletLeft_Handler, 4.0f);
 
 
 		}
+
+		if ((bhbulletSpend <= 2.5f) && (createdRocket == false)){
+			GameObject Temporary_bhrocket_Handler;
+			Temporary_bhrocket_Handler = Instantiate(bhrocketInstance,bhrocketSpawn.transform.position,bhrocketSpawn.transform.rotation) as GameObject;
+			createdRocket = true;
+			Temporary_bhrocket_Handler.transform.Rotate(Vector3.left * 360);
+
+			Rigidbody Temporary_RigidBodyRocket;
+			Temporary_RigidBodyRocket = Temporary_bhrocket_Handler.GetComponent<Rigidbody>();
+
+			Temporary_RigidBodyRocket.AddForce(0, -6, -32, ForceMode.Impulse);
+
+			Destroy(Temporary_bhrocket_Handler, 4.0f);
+
+		
+		}
+
+		if (bhbulletSpend >= 2.5f) {
+			createdRocket = false;}
 		
 	}
 }
