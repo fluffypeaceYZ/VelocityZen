@@ -146,7 +146,7 @@ public class BlackHawkScript : MonoBehaviour {
 			lifeRing.sprite = lifeRingArray [0];
 			explosiongrey.Play ();
 			audioSource.PlayOneShot(BHExplosion, 0.5f);
-			Destroy (this.gameObject, 2); 
+			Destroy (this.gameObject, 3); 
 			Destroy (lifeRing, 1);
 		}
 
