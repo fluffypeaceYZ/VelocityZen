@@ -22,28 +22,29 @@ public class TriggerZone1 : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		canCreateTriggerZone = false;
+		canCreateBH = false;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
 	 
-		if((enemyUFOInstance == null) && (ciaAgentInstanceUP == null) && (ciaAgentInstanceDOWN == null) && (numberofWaves <=2)) {
+		if((enemyUFOInstance == null) && (ciaAgentInstanceUP == null) && (ciaAgentInstanceDOWN == null) && (numberofWaves <=1)) {
 
-			if(canCreateTriggerZone) {
+			if (canCreateTriggerZone) {
 				print ("Create new trigger zone");
 
 				canCreateTriggerZone = false;
 
 				GameObject TriggerInstance;
 				TriggerInstance = Instantiate (TriggerZone, new Vector3 (9, -1.5f, Player.transform.position.z + 80), TriggerZone.transform.rotation) as GameObject;
-
+				numberofWaves +=1;
 			
 			}
 
 		}	 
 
-		if (numberofWaves > 2) {
+		if (numberofWaves > 1) {
 			canCreateBH = true;
 			bhTimer -= Time.deltaTime;
 		
@@ -66,7 +67,7 @@ public class TriggerZone1 : MonoBehaviour {
 			ciaAgentInstanceUP =	Instantiate (ciaAgent, new Vector3 (-7, 0.3f, Player.transform.position.z + Random.Range (15, 25)), ciaAgent.transform.rotation) as GameObject;
 			ciaAgentInstanceDOWN =	Instantiate (downciaAgent, new Vector3 (-2, 0.3f, Player.transform.position.z + Random.Range (15, 25)), downciaAgent.transform.rotation) as GameObject;
 			canCreateTriggerZone = true;
-			numberofWaves +=1;
+
 
 
 
