@@ -9,11 +9,15 @@ public class TriggerZone1 : MonoBehaviour {
 	public GameObject TriggerZone;
 	public GameObject ciaAgent;
 	public GameObject downciaAgent;
-	//UFOHealth UFOScript;
+	public GameObject blackHawk;
 	GameObject ciaAgentInstanceUP;
 	GameObject ciaAgentInstanceDOWN;
 	GameObject enemyUFOInstance;
+	GameObject bhInstance;
+	private int numberofWaves = 0;
+	private bool canCreateBH;
 	bool canCreateTriggerZone;
+    private float bhTimer = 5f;
 
 	// Use this for initialization
 	void Start () {
@@ -23,14 +27,8 @@ public class TriggerZone1 : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		/*GameObject UFOLimit = GameObject.FindWithTag("UFO").GetComponent<UFOHealth>();
-
-		if (UFOHealth.numberofUFOs == 0) {
-		
-			GameObject TriggerInstance;
-
-		}*/
-		if((enemyUFOInstance == null) && (ciaAgentInstanceUP == null) && (ciaAgentInstanceDOWN == null)) {
+	 
+		if((enemyUFOInstance == null) && (ciaAgentInstanceUP == null) && (ciaAgentInstanceDOWN == null) && (numberofWaves <=2)) {
 
 			if(canCreateTriggerZone) {
 				print ("Create new trigger zone");
@@ -39,10 +37,25 @@ public class TriggerZone1 : MonoBehaviour {
 
 				GameObject TriggerInstance;
 				TriggerInstance = Instantiate (TriggerZone, new Vector3 (9, -1.5f, Player.transform.position.z + 80), TriggerZone.transform.rotation) as GameObject;
+
+			
 			}
 
 		}	 
 
+		if (numberofWaves > 2) {
+			canCreateBH = true;
+			bhTimer -= Time.deltaTime;
+		
+		}
+
+		if ((canCreateBH == true) && (bhTimer <= 0)) {
+		
+			bhInstance =  Instantiate (blackHawk, new Vector3 (0, 10, Player.transform.position.z + 35), blackHawk.transform.rotation) as GameObject;
+			canCreateBH = false;
+		}
+	
+	
 	}
 
 	void OnTriggerEnter(Collider other) {
@@ -53,10 +66,8 @@ public class TriggerZone1 : MonoBehaviour {
 			ciaAgentInstanceUP =	Instantiate (ciaAgent, new Vector3 (-7, 0.3f, Player.transform.position.z + Random.Range (15, 25)), ciaAgent.transform.rotation) as GameObject;
 			ciaAgentInstanceDOWN =	Instantiate (downciaAgent, new Vector3 (-2, 0.3f, Player.transform.position.z + Random.Range (15, 25)), downciaAgent.transform.rotation) as GameObject;
 			canCreateTriggerZone = true;
+			numberofWaves +=1;
 
-			//GameObject UFOLimit = GameObject.Find("UFO_Unity");
-
-			 //UFOScript = enemyUFOInstance.GetComponent<UFOHealth>();
 
 
 		}
