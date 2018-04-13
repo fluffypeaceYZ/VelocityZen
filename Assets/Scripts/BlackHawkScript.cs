@@ -13,12 +13,15 @@ public class BlackHawkScript : MonoBehaviour {
 	public float bhbulletSpend = 10f;
 	public Sprite[] lifeRingArray;
 	public Image lifeRing;
-	private int lifeRingCount = 12;
+	private int lifeRingCount = 36;
 	public GameObject lifeRingSpawnAgent;
 	public GameObject lifeRingInstance;
 	public AudioClip bhbullet;
 	public AudioClip bhrocket;
 	AudioSource audioSource;
+	public ParticleSystem explosiongrey;
+	public AudioClip BHExplosion;
+
 	 
 	private bool createdRocket = false;
 	// Use this for initialization
@@ -96,20 +99,58 @@ public class BlackHawkScript : MonoBehaviour {
 	public void TakeDamageBH()
 	{
 
-		if(lifeRingCount > 0) lifeRingCount-=1;
+		lifeRingCount-=1;
 
+		if (lifeRingCount == 36) {
+			lifeRing.sprite = lifeRingArray [12];
+		}
+		if (lifeRingCount == 33) {
+			lifeRing.sprite = lifeRingArray [11];
+		}
+		if (lifeRingCount == 30) {
+			lifeRing.sprite = lifeRingArray [10];
+		}
+		if (lifeRingCount == 27) {
+			lifeRing.sprite = lifeRingArray [9];
+		}
+		if (lifeRingCount == 24) {
+			lifeRing.sprite = lifeRingArray [8];
+		}
+		if (lifeRingCount == 21) {
+			lifeRing.sprite = lifeRingArray [7];
+		}
+		if (lifeRingCount == 18) {
+			lifeRing.sprite = lifeRingArray [6];
+		}
+		if (lifeRingCount == 15) {
+			lifeRing.sprite = lifeRingArray [5];
+		}
+		if (lifeRingCount == 12) {
+			lifeRing.sprite = lifeRingArray [4];
+		}
+		if (lifeRingCount == 9) {
+			lifeRing.sprite = lifeRingArray [3];
+		}
+		if (lifeRingCount == 6) {
+			lifeRing.sprite = lifeRingArray [2];
+		}
+		if (lifeRingCount == 3) {
+			lifeRing.sprite = lifeRingArray [1];
+		}
 		//Ternary operator
 		//lifeRingCount = (lifeRingCount > 0)? lifeRingCount--: 0;
 		//lifeRingCount = (condition)? true value : false value;
 
-		if (lifeRingCount == 0){
+		if (lifeRingCount <= 0){
 
 			lifeRing.sprite = lifeRingArray [0];
-			Destroy (this.gameObject, 1); 
+			explosiongrey.Play ();
+			audioSource.PlayOneShot(BHExplosion, 0.5f);
+			Destroy (this.gameObject, 2); 
 			Destroy (lifeRing, 1);
 		}
 
-		lifeRing.sprite = lifeRingArray [lifeRingCount];
+
 	}
 
 	void OnCollisionEnter (Collision col){
