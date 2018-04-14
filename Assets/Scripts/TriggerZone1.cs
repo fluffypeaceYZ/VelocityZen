@@ -48,18 +48,20 @@ public class TriggerZone1 : MonoBehaviour {
 
 		if (numberofWaves == 1)  {
 			canCreateBH = true;
-			bhTimer -= Time.deltaTime;
+
 			createWave = false;
 		
 		}
 
-		/*if ((canCreateBH ==true) && (bhTimer <= 0)) {
+		/*if ((canCreateBH ==true) && (bhTimer <= 0) &&(enemyUFOInstance == null) && (ciaAgentInstanceUP == null) && (ciaAgentInstanceDOWN == null)) {
 
 			bhInstance = Instantiate (blackHawk, new Vector3 (0, 10, Player.transform.position.z + 35), blackHawk.transform.rotation) as GameObject;
+			numberofWaves+=1;
 			canCreateBH = false;
 		}*/
 
 	}
+
 
 		
 
@@ -75,7 +77,7 @@ public class TriggerZone1 : MonoBehaviour {
 			ciaAgentInstanceUP =	Instantiate (ciaAgent, new Vector3 (-7, 0.3f, Player.transform.position.z + Random.Range (15, 25)), ciaAgent.transform.rotation) as GameObject;
 			ciaAgentInstanceDOWN =	Instantiate (downciaAgent, new Vector3 (-2, 0.3f, Player.transform.position.z + Random.Range (15, 25)), downciaAgent.transform.rotation) as GameObject;
 			canCreateTriggerZone = true;
-			numberofWaves +=1;
+			numberofWaves+=1;
 
 
 
