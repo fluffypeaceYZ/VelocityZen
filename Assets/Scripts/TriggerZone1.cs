@@ -29,35 +29,46 @@ public class TriggerZone1 : MonoBehaviour {
 	void Update () {
 
 	 
-		if((enemyUFOInstance == null) && (ciaAgentInstanceUP == null) && (ciaAgentInstanceDOWN == null) && (numberofWaves <=1)) {
+		if ((enemyUFOInstance == null) && (ciaAgentInstanceUP == null) && (ciaAgentInstanceDOWN == null) && (canCreateBH == false)) {
 
-			if (canCreateTriggerZone) {
+			if ((canCreateTriggerZone) && (canCreateBH == false)) {
 				print ("Create new trigger zone");
 
 				canCreateTriggerZone = false;
 
 				GameObject TriggerInstance;
 				TriggerInstance = Instantiate (TriggerZone, new Vector3 (9, -1.5f, Player.transform.position.z + 80), TriggerZone.transform.rotation) as GameObject;
-				numberofWaves +=1;
+
 			
 			}
 
 		}	 
 
-		if (numberofWaves > 1) {
+		if ((numberofWaves == 1) && (enemyUFOInstance == null) && (ciaAgentInstanceUP == null) && (ciaAgentInstanceDOWN == null)) {
 			canCreateBH = true;
 			bhTimer -= Time.deltaTime;
 		
 		}
-
 		if ((canCreateBH == true) && (bhTimer <= 0)) {
 		
-			bhInstance =  Instantiate (blackHawk, new Vector3 (0, 10, Player.transform.position.z + 35), blackHawk.transform.rotation) as GameObject;
+		
+			CreateBH ();
+		}
+	
+	}
+
+		
+	void CreateBH () {
+
+	
+		
+			bhInstance = Instantiate (blackHawk, new Vector3 (0, 10, Player.transform.position.z + 35), blackHawk.transform.rotation) as GameObject;
 			canCreateBH = false;
 		}
 	
+
 	
-	}
+
 
 	void OnTriggerEnter(Collider other) {
 		if (other.gameObject.tag == "Player") {
@@ -67,7 +78,7 @@ public class TriggerZone1 : MonoBehaviour {
 			ciaAgentInstanceUP =	Instantiate (ciaAgent, new Vector3 (-7, 0.3f, Player.transform.position.z + Random.Range (15, 25)), ciaAgent.transform.rotation) as GameObject;
 			ciaAgentInstanceDOWN =	Instantiate (downciaAgent, new Vector3 (-2, 0.3f, Player.transform.position.z + Random.Range (15, 25)), downciaAgent.transform.rotation) as GameObject;
 			canCreateTriggerZone = true;
-
+			numberofWaves +=1;
 
 
 
