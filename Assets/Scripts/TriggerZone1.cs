@@ -16,6 +16,7 @@ public class TriggerZone1 : MonoBehaviour {
 	GameObject bhInstance;
 	private int numberofWaves = 0;
 	private bool canCreateBH;
+	private bool createWave;
 	bool canCreateTriggerZone;
     private float bhTimer = 5f;
 
@@ -23,15 +24,16 @@ public class TriggerZone1 : MonoBehaviour {
 	void Start () {
 		canCreateTriggerZone = false;
 		canCreateBH = false;
+		createWave = true;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
 	 
-		if ((enemyUFOInstance == null) && (ciaAgentInstanceUP == null) && (ciaAgentInstanceDOWN == null) && (canCreateBH == false)) {
+		if ((enemyUFOInstance == null) && (ciaAgentInstanceUP == null) && (ciaAgentInstanceDOWN == null) && (createWave == true)) {
 
-			if ((canCreateTriggerZone) && (canCreateBH == false)) {
+			if ((canCreateTriggerZone) && (createWave == true)) {
 				print ("Create new trigger zone");
 
 				canCreateTriggerZone = false;
@@ -47,25 +49,20 @@ public class TriggerZone1 : MonoBehaviour {
 		if ((numberofWaves == 1) && (enemyUFOInstance == null) && (ciaAgentInstanceUP == null) && (ciaAgentInstanceDOWN == null)) {
 			canCreateBH = true;
 			bhTimer -= Time.deltaTime;
+			createWave = false;
 		
 		}
-		if ((canCreateBH == true) && (bhTimer <= 0)) {
-		
-		
-			CreateBH ();
-		}
-	
-	}
 
-		
-	void CreateBH () {
+		if ((canCreateBH ==true && (bhTimer <= 0)) {
 
-	
-		
 			bhInstance = Instantiate (blackHawk, new Vector3 (0, 10, Player.transform.position.z + 35), blackHawk.transform.rotation) as GameObject;
 			canCreateBH = false;
 		}
-	
+
+	}
+
+		
+
 
 	
 
