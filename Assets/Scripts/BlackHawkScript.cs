@@ -23,7 +23,7 @@ public class BlackHawkScript : MonoBehaviour {
 	public ParticleSystem explosiongrey;
 	public AudioClip BHExplosion;
 	private bool createdRocket = false;
-	public float GameOverTimer = 0;
+	public float GameOverTimer = 2.99f;
 
 	// Use this for initialization
 	void Start () {
@@ -35,12 +35,14 @@ public class BlackHawkScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if (lifeRingCount <= 0){
+		if (lifeRingCount <= 0) {
 
-			GameOverTimer += Time.deltaTime;
+			GameOverTimer -= Time.deltaTime;
 		}
 
-		if (GameOverTimer >= 10f) {
+	
+
+		if (GameOverTimer <= 0) {
 
 			SceneManager.LoadScene ("GameCompleted");
 
@@ -157,7 +159,7 @@ public class BlackHawkScript : MonoBehaviour {
 
 		if (lifeRingCount <= 0){
 
-			lifeRing.sprite = lifeRingArray [0];
+			 lifeRing.sprite = lifeRingArray [0];
 			explosiongrey.Play ();
 			audioSource.PlayOneShot(BHExplosion, 0.5f);
 			Destroy (this.gameObject, 3); 
