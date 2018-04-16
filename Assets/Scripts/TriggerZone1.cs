@@ -14,11 +14,11 @@ public class TriggerZone1 : MonoBehaviour {
 	GameObject ciaAgentInstanceDOWN;
 	GameObject enemyUFOInstance;
 	GameObject bhInstance;
-	 int numberofWaves = 0;
-	 bool canCreateBH;
-	 bool createWave;
-	bool canCreateTriggerZone;
-    private float bhTimer = 5f;
+	public int numberofWaves = 0;
+	public bool canCreateBH;
+	public bool createWave;
+	public bool canCreateTriggerZone;
+    public float bhTimer = 5f;
 
 	// Use this for initialization
 	void Start () {
@@ -46,7 +46,7 @@ public class TriggerZone1 : MonoBehaviour {
 
 		}	 
 
-		if (numberofWaves == 1)  {
+		if (numberofWaves == 3)  {
 			canCreateBH = true;
 
 			createWave = false;
@@ -62,14 +62,8 @@ public class TriggerZone1 : MonoBehaviour {
 
 	}
 
-
-		
-
-
-	
-
-
 	void OnTriggerEnter(Collider other) {
+
 		if ((other.gameObject.tag == "Player") && (createWave == true)) {
 			print ("Collide");
 
@@ -85,7 +79,7 @@ public class TriggerZone1 : MonoBehaviour {
 
 		if ((other.gameObject.tag == "Player") && (canCreateBH == true)) {
 
-			bhInstance = Instantiate (blackHawk, new Vector3 (0, 10, Player.transform.position.z + 35), blackHawk.transform.rotation) as GameObject;
+			bhInstance = Instantiate (blackHawk, new Vector3 (0, 10, Player.transform.position.z + 32), blackHawk.transform.rotation) as GameObject;
 			canCreateTriggerZone = false;
 		}
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class BlackHawkScript : MonoBehaviour {
 	public GameObject bhbulletSpawnRight;
@@ -21,9 +22,9 @@ public class BlackHawkScript : MonoBehaviour {
 	AudioSource audioSource;
 	public ParticleSystem explosiongrey;
 	public AudioClip BHExplosion;
-
-	 
 	private bool createdRocket = false;
+	public float GameOverTimer = 0;
+
 	// Use this for initialization
 	void Start () {
 
@@ -33,6 +34,19 @@ public class BlackHawkScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+		if (lifeRingCount <= 0){
+
+			GameOverTimer += Time.deltaTime;
+		}
+
+		if (GameOverTimer >= 10f) {
+
+			SceneManager.LoadScene ("GameCompleted");
+
+
+		}
+
 
 		Vector3 lifeRingPos = Camera.main.WorldToScreenPoint (lifeRingSpawnAgent.transform.position);
 		lifeRing.transform.position = lifeRingPos;
@@ -148,7 +162,10 @@ public class BlackHawkScript : MonoBehaviour {
 			audioSource.PlayOneShot(BHExplosion, 0.5f);
 			Destroy (this.gameObject, 3); 
 			Destroy (lifeRing, 1);
+
+
 		}
+
 
 
 	}
