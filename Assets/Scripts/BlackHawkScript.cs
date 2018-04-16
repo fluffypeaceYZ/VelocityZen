@@ -22,6 +22,7 @@ public class BlackHawkScript : MonoBehaviour {
 	AudioSource audioSource;
 	public ParticleSystem explosiongrey;
 	public AudioClip BHExplosion;
+	public AudioClip heliSound;
 	private bool createdRocket = false;
 	public float GameOverTimer = 2.99f;
 
@@ -34,6 +35,8 @@ public class BlackHawkScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+
 
 		if (lifeRingCount <= 0) {
 
