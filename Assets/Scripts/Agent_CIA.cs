@@ -54,12 +54,12 @@ public class Agent_CIA : MonoBehaviour {
 		Vector3 lifeRingPos = Camera.main.WorldToScreenPoint (lifeRingSpawnAgent.transform.position);
 		lifeRing.transform.position = lifeRingPos;
 
-		if (Input.GetKeyDown (KeyCode.L)) {
+		/*if (Input.GetKeyDown (KeyCode.L)) {
 
 			TakeDamage2 ();
 
 		
-		}
+		}*/
 
 		agentBulletTimer -= Time.deltaTime;
 		 

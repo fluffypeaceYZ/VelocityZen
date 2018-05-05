@@ -29,11 +29,11 @@ public class UFOHealth : MonoBehaviour {
 		Vector3 lifeRingPos = Camera.main.WorldToScreenPoint (lifeRingSpawn.transform.position);
 		lifeRing.transform.position = lifeRingPos;
 
-		if (Input.GetKeyDown (KeyCode.R)) {
+		/*if (Input.GetKeyDown (KeyCode.R)) {
 		
 			TakeDamage ();
 		
-		}
+		}*/
 
 
 

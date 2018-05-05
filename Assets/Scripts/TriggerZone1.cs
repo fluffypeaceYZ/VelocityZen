@@ -46,7 +46,7 @@ public class TriggerZone1 : MonoBehaviour {
 
 		}	 
 
-		if (numberofWaves == 3)  {
+		if (numberofWaves == 5)  {
 			canCreateBH = true;
 
 			createWave = false;

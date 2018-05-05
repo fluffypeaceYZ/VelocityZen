@@ -25,6 +25,7 @@ public class BlackHawkScript : MonoBehaviour {
 	public AudioClip heliSound;
 	private bool createdRocket = false;
 	public float GameOverTimer = 2.99f;
+	public float blackHawkSpeed = 4f;
 
 	// Use this for initialization
 	void Start () {
@@ -36,7 +37,7 @@ public class BlackHawkScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-
+		transform.position = new Vector3(Mathf.PingPong (Time.time * blackHawkSpeed, 15) -9, transform.position.y ,transform.position.z);
 
 		if (lifeRingCount <= 0) {
 
