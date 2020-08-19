@@ -6,15 +6,18 @@ public class Bullet : MonoBehaviour {
 	public GameObject bulletSpawn;
 	public GameObject bulletInstance;
 	public float Bullet_Forward_Force;
-	public float bulletTimer;
+	private float bulletTimer;
 	public float minAngle, maxAngle;
 	public AudioClip impact;
+	public bool canShoot;
 	AudioSource audioSource;
 
 
 
 	// Use this for initialization
 	void Start () {
+
+		bulletTimer = 10;
 
 		audioSource = GetComponent<AudioSource>();
 
@@ -60,19 +63,25 @@ public class Bullet : MonoBehaviour {
 		}
 
 
+	bulletTimer -= Time.deltaTime;
 
-		bulletTimer -= Time.deltaTime;
-		if (bulletTimer <=0){
+		if (bulletTimer <= 0) {
 
-			bulletTimer = 0;
+			bulletTimer = 10;
+			canShoot = true; 
+		
+		}
+
+		 if (bulletTimer >= 0) {  
+			
+			canShoot = false; 
 		}
 	
-		if (Input.GetKey(KeyCode.Tab) || (Input.GetKey (KeyCode.JoystickButton5) || (Input.GetAxis("RightTrigger") > 0)) && bulletTimer == 0)
+		if (Input.GetKey(KeyCode.Tab) || (Input.GetKey (KeyCode.JoystickButton5) || (Input.GetAxis("RightTrigger") > 0)) && (canShoot == true))
 			
 		{
 			GameObject Temporary_Bullet_Handler;
 			Temporary_Bullet_Handler = Instantiate(bulletInstance,bulletSpawn.transform.position,bulletSpawn.transform.rotation) as GameObject;
-			bulletTimer = 0.2f;
 			audioSource.PlayOneShot(impact, 1);
 
 			//Sometimes bullets may appear rotated incorrectly due to the way its pivot was set from the original modeling package.
