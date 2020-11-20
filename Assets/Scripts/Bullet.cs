@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
+
 
 public class Bullet : MonoBehaviour {
 	public float CannonSpeed;
@@ -10,6 +12,7 @@ public class Bullet : MonoBehaviour {
 	public float minAngle, maxAngle;
 	public AudioClip impact;
 	AudioSource audioSource;
+	public Slider bulletSlider;
 
 
 
@@ -44,7 +47,7 @@ public class Bullet : MonoBehaviour {
 
 	transform.rotation = ClampRotationAroundXAxis(transform.rotation, minAngle, maxAngle);
 
-		if (Input.GetKey (KeyCode.Q) || (Input.GetAxis("CannonRight") < 0)) 
+		if (Input.GetKey (KeyCode.Q) || (Input.GetAxis("CannonRight") < 0) || (bulletSlider.value < 0.5)) 
 
 		{
 			transform.Rotate(Vector3.left * Time.deltaTime * CannonSpeed);
@@ -55,7 +58,7 @@ public class Bullet : MonoBehaviour {
 
 
 
-		if (Input.GetKey (KeyCode.A) || (Input.GetAxis("CannonRight") > 0)) 
+		if (Input.GetKey (KeyCode.A) || (Input.GetAxis("CannonRight") > 0) || (bulletSlider.value > 0.5))
 
 		{
 			transform.Rotate(Vector3.right * Time.deltaTime * CannonSpeed);
