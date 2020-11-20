@@ -9,7 +9,6 @@ public class Bullet : MonoBehaviour {
 	private float bulletTimer;
 	public float minAngle, maxAngle;
 	public AudioClip impact;
-	private Slider weaponSider;
 	AudioSource audioSource;
 
 

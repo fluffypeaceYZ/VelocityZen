@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
+
 
 public class Vehicle : MonoBehaviour
 {
@@ -7,14 +9,18 @@ public class Vehicle : MonoBehaviour
     float UpperScreen = -7.4f;
 	public Material matHit;
 	public Color colRed;
+    public Slider carSlider;
 
 
-	 
+
+
     // Use this for initialization
     void Start()
-    {
-        
-    }
+    { 
+
+
+      
+}
 
     // Update is called once per frame
     void Update()
@@ -27,13 +33,13 @@ public class Vehicle : MonoBehaviour
         transform.position += new Vector3(0, 0, 0.1f);
 
 
-		if (Input.GetKey(KeyCode.UpArrow) || (Input.GetAxis("StrafingLeft") < 0))
+		if (Input.GetKey(KeyCode.UpArrow) || (Input.GetAxis("StrafingLeft") < 0) || (carSlider.value > 0.5))
 
         {
             transform.position -= new Vector3(0.1f, 0, 0);
         }
 
-		if (Input.GetKey(KeyCode.DownArrow) || (Input.GetAxis("StrafingLeft") > 0))
+		if (Input.GetKey(KeyCode.DownArrow) || (Input.GetAxis("StrafingLeft") > 0) || (carSlider.value < 0.5))
 
         {
             transform.position += new Vector3(0.1f, 0, 0);
@@ -53,5 +59,6 @@ public class Vehicle : MonoBehaviour
         }
     }
 
-}
 
+
+}
