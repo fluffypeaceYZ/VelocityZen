@@ -15,7 +15,7 @@ public class Vehicle2 : MonoBehaviour
     void Update()
     {
 
-        transform.position += new Vector3(0, 0, 0.6f);
+        transform.position += new Vector3(0, 0, 0.2f);
 
 
         if (Input.GetKey(KeyCode.UpArrow))
