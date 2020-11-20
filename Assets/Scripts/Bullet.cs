@@ -9,7 +9,7 @@ public class Bullet : MonoBehaviour {
 	private float bulletTimer;
 	public float minAngle, maxAngle;
 	public AudioClip impact;
-	public bool canShoot;
+	private Slider weaponSider;
 	AudioSource audioSource;
 
 
@@ -17,7 +17,7 @@ public class Bullet : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-		bulletTimer = 10;
+		bulletTimer = 0f;
 
 		audioSource = GetComponent<AudioSource>();
 
@@ -65,28 +65,24 @@ public class Bullet : MonoBehaviour {
 
 	bulletTimer -= Time.deltaTime;
 
-		if (bulletTimer <= 0) {
+		if (bulletTimer <= 0f) {
 
-			bulletTimer = 10;
-			canShoot = true; 
-		
-		}
+			bulletTimer = 0f;
+			 
+			}
 
-		 if (bulletTimer >= 0) {  
-			
-			canShoot = false; 
-		}
 	
-		if (Input.GetKey(KeyCode.Tab) || (Input.GetKey (KeyCode.JoystickButton5) || (Input.GetAxis("RightTrigger") > 0)) && (canShoot == true))
+		if (Input.GetKey(KeyCode.Tab) && (bulletTimer == 0f) || (Input.GetKey (KeyCode.JoystickButton5) || (Input.GetAxis("RightTrigger") > 0)) && (bulletTimer == 0f))
 			
 		{
 			GameObject Temporary_Bullet_Handler;
 			Temporary_Bullet_Handler = Instantiate(bulletInstance,bulletSpawn.transform.position,bulletSpawn.transform.rotation) as GameObject;
 			audioSource.PlayOneShot(impact, 1);
+			bulletTimer = 0.5f;
 
 			//Sometimes bullets may appear rotated incorrectly due to the way its pivot was set from the original modeling package.
 			//This is EASILY corrected here, you might have to rotate it from a different axis and or angle based on your particular mesh.
-			Temporary_Bullet_Handler.transform.Rotate(Vector3.left * 90);
+			Temporary_Bullet_Handler.transform.Rotate(Vector3.right * 90);
 
 			//Retrieve the Rigidbody component from the instantiated Bullet and control it.
 			Rigidbody Temporary_RigidBody;
@@ -101,5 +97,6 @@ public class Bullet : MonoBehaviour {
 		}
 	
 	}
+
 }
  

@@ -25,7 +25,7 @@ public class UFOScript : MonoBehaviour {
 
 		transform.position = new Vector3(Mathf.PingPong (Time.time * UFOSpeed, 16) -8, transform.position.y ,transform.position.z);
 
-		transform.position += new Vector3(0, 0, 0.4f);
+		transform.position += new Vector3(0, 0, 0.1f);
 
 		laserTimer -= Time.deltaTime;
 		if (laserTimer <=0){

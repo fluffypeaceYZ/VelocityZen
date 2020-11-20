@@ -6,7 +6,7 @@ public class LifeBarScript : MonoBehaviour {
 	public Sprite[] healthBarArray;
 	public Image healthBar;
 	public Text HealthKits;
-	int NumberofKits = 0;
+	private int NumberofKits = 0;
 	private int healthBarCount = 10;
 	// Use this for initialization
 	void Start () {

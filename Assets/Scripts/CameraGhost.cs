@@ -11,7 +11,7 @@ public class CameraGhost : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        transform.position += new Vector3(0, 0, 0.4f);
+        transform.position += new Vector3(0, 0, 0.1f);
 
     }
 }

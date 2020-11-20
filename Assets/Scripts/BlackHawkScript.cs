@@ -64,7 +64,7 @@ public class BlackHawkScript : MonoBehaviour {
 			bhbulletSpend = 10f;
 		}
 
-		transform.position += new Vector3(0, 0, 0.4f);
+		transform.position += new Vector3(0, 0, 0.1f);
 
 		if ((bhbulletSpend >=6f) && (bhbulletTimer <= 0)){
 

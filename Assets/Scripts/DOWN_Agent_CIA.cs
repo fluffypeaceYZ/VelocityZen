@@ -49,7 +49,7 @@ public class DOWN_Agent_CIA : MonoBehaviour {
 		transform.position = new Vector3(Mathf.PingPong (Time.time * AgentSpeed, 9) +1, transform.position.y ,transform.position.z);
 
 
-		transform.position += new Vector3(0, 0, 0.4f);
+		transform.position += new Vector3(0, 0, 0.1f);
 
 		Vector3 lifeRingPos = Camera.main.WorldToScreenPoint (lifeRingSpawnAgent.transform.position);
 		lifeRing.transform.position = lifeRingPos;

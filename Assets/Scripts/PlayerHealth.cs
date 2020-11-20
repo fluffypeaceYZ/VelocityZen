@@ -38,7 +38,7 @@ public class PlayerHealth : MonoBehaviour
 			Shields.text = NumberofShields.ToString();
 		}
 
-		if (Input.GetKeyDown (KeyCode.G) || (Input.GetKeyDown (KeyCode.JoystickButton3)) && NumberofShields >= 1 && (ShieldInstance == null)) {
+		if (Input.GetKeyDown (KeyCode.G) && NumberofShields >= 1 || (Input.GetKeyDown (KeyCode.JoystickButton3)) && NumberofShields >= 1 && (ShieldInstance == null)) {
 		
 			audioSource.PlayOneShot(crystal, 1);
 
@@ -53,7 +53,7 @@ public class PlayerHealth : MonoBehaviour
 
 
 
-		if (Input.GetKeyDown (KeyCode.H) || (Input.GetKeyDown (KeyCode.JoystickButton0)) && NumberofKits>=1 && healthBarCount < 11)
+		if (Input.GetKeyDown (KeyCode.H) && NumberofKits >= 1 || (Input.GetKeyDown (KeyCode.JoystickButton0)) && NumberofKits>=1 && healthBarCount < 11)
 		{
 			NumberofKits -= 1;
 			HealthKits.text = NumberofKits.ToString();

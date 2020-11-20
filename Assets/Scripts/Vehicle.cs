@@ -24,19 +24,19 @@ public class Vehicle : MonoBehaviour
 		}
 
 
-        transform.position += new Vector3(0, 0, 0.4f);
+        transform.position += new Vector3(0, 0, 0.1f);
 
 
 		if (Input.GetKey(KeyCode.UpArrow) || (Input.GetAxis("StrafingLeft") < 0))
 
         {
-            transform.position -= new Vector3(0.4f, 0, 0);
+            transform.position -= new Vector3(0.1f, 0, 0);
         }
 
 		if (Input.GetKey(KeyCode.DownArrow) || (Input.GetAxis("StrafingLeft") > 0))
 
         {
-            transform.position += new Vector3(0.4f, 0, 0);
+            transform.position += new Vector3(0.1f, 0, 0);
         }
 
         if (transform.position.x >= BottomScreen)
