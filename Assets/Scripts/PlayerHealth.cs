@@ -78,12 +78,12 @@ public class PlayerHealth : MonoBehaviour
 			HealthKits.text = NumberofKits.ToString();
 		}
 
-		/*if (Input.GetKeyDown (KeyCode.P))
+		if (Input.GetKeyDown (KeyCode.P))
 		{
 			TakeDamage1 ();
 
 
-		}*/
+		}
 
 		if (Input.GetKeyDown (KeyCode.Escape)) {
 
