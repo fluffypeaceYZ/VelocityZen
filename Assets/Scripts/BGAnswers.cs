@@ -36,8 +36,8 @@ public class BGAnswers : MonoBehaviour
     {
         for (int i = 0; i < TileCount; i++)
         {
-            Vector3 tilePos = Player.position + (i - TilesBehindPlayer) * tileLength * Vector3.forward;
-            GameObject tile = Instantiate(TilePrefab, tilePos, Quaternion.identity);
+            Vector3 tilePos = Player.position + (i - TilesBehindPlayer) * tileLength * Vector3.right;
+            GameObject tile = Instantiate(TilePrefab, tilePos, Quaternion.Euler(0, 90, 0));
 
             Tiles.Add(tile);
         }
@@ -46,7 +46,7 @@ public class BGAnswers : MonoBehaviour
     private void Update()
     {
         // Check if the tiles should be moved
-        if (Player.position.z > Tiles[0].transform.position.z + TilesBehindPlayer * tileLength)
+        if (Player.position.x > Tiles[0].transform.position.x + TilesBehindPlayer * tileLength)
             MoveTile();
     }
 
@@ -58,7 +58,7 @@ public class BGAnswers : MonoBehaviour
         GameObject tile = Tiles[0];
 
         // Move it in front of the other tiles
-        tile.transform.position = Tiles[TileCount - 1].transform.position + Vector3.forward * tileLength;
+        tile.transform.position = Tiles[TileCount - 1].transform.position + Vector3.right * tileLength;
 
         // Put the tile at the end of the list
         Tiles.RemoveAt(0);
