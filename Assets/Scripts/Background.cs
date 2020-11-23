@@ -28,8 +28,7 @@ public class Background : MonoBehaviour
 	void Update()
 	{
 
-
-
+		
 	}
 
 
@@ -42,9 +41,13 @@ public class Background : MonoBehaviour
 			print("New Background");
 			GameObject roadInstance;
 			roadInstance = Instantiate(Road, new Vector3(Road.transform.position.x, Road.transform.position.y, Player.transform.position.z + roadDistance), Road.transform.rotation) as GameObject;
+			
 			GameObject fenceInstance;
 			fenceInstance = Instantiate(Fence, new Vector3(Fence.transform.position.x, Fence.transform.position.y, Player.transform.position.z + fenceDistance), Fence.transform.rotation) as GameObject;
-
+			
+			Destroy(roadInstance, 60);
+		    
+			Destroy(fenceInstance, 60);
 		}
 	}
 

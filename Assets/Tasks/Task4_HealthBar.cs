@@ -41,8 +41,8 @@ public class Task4_HealthBar : MonoBehaviour
 			HealthKits.text = NumberofKits.ToString();
 		}
 
-		if (NumberofKits >= 99) {
-			NumberofKits = 99;
+		if (NumberofKits >= MaxNumberofKits) {
+			NumberofKits = MaxNumberofKits;
 			HealthKits.text = NumberofKits.ToString();
 		}
 
