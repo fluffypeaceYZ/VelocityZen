@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Shield : MonoBehaviour {
-	float BottomScreen = 10f;
-	float UpperScreen = -7.4f;
+	public float BottomScreen = 10f;
+	public float UpperScreen = -7.4f;
 	public float shieldSpeed;
 	
 
