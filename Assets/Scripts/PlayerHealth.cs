@@ -17,6 +17,8 @@ public class PlayerHealth : MonoBehaviour
 	public GameObject Shield;
 	public GameObject Player;
 	public AudioClip crystal;
+	public float shieldPosition;
+	public float shieldDistance;
 	AudioSource audioSource;
 
 
@@ -42,7 +44,7 @@ public class PlayerHealth : MonoBehaviour
 		
 			audioSource.PlayOneShot(crystal, 1);
 
-			ShieldInstance = Instantiate (Shield, new Vector3 (Player.transform.position.x, Player.transform.position.y+ 6, Player.transform.position.z + 4), Shield.transform.rotation) as GameObject;
+			ShieldInstance = Instantiate (Shield, new Vector3 (Player.transform.position.x, Player.transform.position.y+ shieldPosition, Player.transform.position.z + shieldDistance), Shield.transform.rotation) as GameObject;
 		
 			NumberofShields--;
 			Shields.text = NumberofShields.ToString();

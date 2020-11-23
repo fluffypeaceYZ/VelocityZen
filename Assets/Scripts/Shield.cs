@@ -5,6 +5,8 @@ using UnityEngine;
 public class Shield : MonoBehaviour {
 	float BottomScreen = 10f;
 	float UpperScreen = -7.4f;
+	public float shieldSpeed;
+	
 
 
 	 
@@ -20,7 +22,7 @@ public class Shield : MonoBehaviour {
 
 		 
 
-		transform.position += new Vector3(0, 0, 0.1f);
+		transform.position += new Vector3(0, 0, shieldSpeed);
 
 
 
@@ -28,13 +30,13 @@ public class Shield : MonoBehaviour {
 		if (Input.GetKey(KeyCode.UpArrow) || (Input.GetAxis("StrafingLeft") < 0))
 
 		{
-			transform.position -= new Vector3(0.1f, 0, 0);
+			transform.position -= new Vector3(shieldSpeed, 0, 0);
 		}
 
 		if (Input.GetKey(KeyCode.DownArrow) || (Input.GetAxis("StrafingLeft") > 0))
 
 		{
-			transform.position += new Vector3(0.1f, 0, 0);
+			transform.position += new Vector3(shieldSpeed, 0, 0);
 		}
 
 		if (transform.position.x >= BottomScreen)
