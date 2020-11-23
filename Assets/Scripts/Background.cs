@@ -45,9 +45,9 @@ public class Background : MonoBehaviour
 			GameObject fenceInstance;
 			fenceInstance = Instantiate(Fence, new Vector3(Fence.transform.position.x, Fence.transform.position.y, Player.transform.position.z + fenceDistance), Fence.transform.rotation) as GameObject;
 			
-			Destroy(roadInstance, 60);
+			Destroy(roadInstance, 200);
 		    
-			Destroy(fenceInstance, 60);
+			Destroy(fenceInstance, 200);
 		}
 	}
 
