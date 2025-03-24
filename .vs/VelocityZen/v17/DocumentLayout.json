@@ -3,7 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\Yassine\\Desktop\\Velocity_Zen\\VelocityZen\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{91418568-C74E-CAF7-A798-78F556155E07}|Assembly-CSharp.csproj|c:\\users\\yassine\\desktop\\velocity_zen\\velocityzen\\assets\\scripts\\hovturret.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{91418568-C74E-CAF7-A798-78F556155E07}|Assembly-CSharp.csproj|c:\\users\\yassine\\desktop\\velocity_zen\\velocityzen\\assets\\scripts\\dronecolor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91418568-C74E-CAF7-A798-78F556155E07}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dronecolor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91418568-C74E-CAF7-A798-78F556155E07}|Assembly-CSharp.csproj|C:\\Users\\Yassine\\Desktop\\Velocity_Zen\\VelocityZen\\assets\\scripts\\greenbuttonufo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91418568-C74E-CAF7-A798-78F556155E07}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\greenbuttonufo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91418568-C74E-CAF7-A798-78F556155E07}|Assembly-CSharp.csproj|C:\\Users\\Yassine\\Desktop\\Velocity_Zen\\VelocityZen\\assets\\scripts\\hovturret.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{91418568-C74E-CAF7-A798-78F556155E07}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\hovturret.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -54,7 +62,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Vehicle.cs",
               "DocumentMoniker": "C:\\Users\\Yassine\\Desktop\\Velocity_Zen\\VelocityZen\\Assets\\Scripts\\Vehicle.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Vehicle.cs",
@@ -63,38 +71,60 @@
               "ViewState": "AQIAAAgAAAAAAAAAAAAAwCkAAABnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-24T12:42:48.497Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "HovTurret.cs",
-              "DocumentMoniker": "C:\\Users\\Yassine\\Desktop\\Velocity_Zen\\VelocityZen\\Assets\\Scripts\\HovTurret.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\HovTurret.cs",
-              "ToolTip": "C:\\Users\\Yassine\\Desktop\\Velocity_Zen\\VelocityZen\\Assets\\Scripts\\HovTurret.cs",
-              "RelativeToolTip": "Assets\\Scripts\\HovTurret.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAwCAAAAAMAAAA",
+              "Title": "Dronecolor.cs",
+              "DocumentMoniker": "C:\\Users\\Yassine\\Desktop\\Velocity_Zen\\VelocityZen\\Assets\\Scripts\\Dronecolor.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Dronecolor.cs",
+              "ToolTip": "C:\\Users\\Yassine\\Desktop\\Velocity_Zen\\VelocityZen\\Assets\\Scripts\\Dronecolor.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Dronecolor.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACIAAABLAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T18:06:54.088Z",
+              "WhenOpened": "2025-03-24T21:24:32.868Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "GreenButtonUFO.cs",
+              "DocumentMoniker": "C:\\Users\\Yassine\\Desktop\\Velocity_Zen\\VelocityZen\\Assets\\Scripts\\GreenButtonUFO.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GreenButtonUFO.cs",
+              "ToolTip": "C:\\Users\\Yassine\\Desktop\\Velocity_Zen\\VelocityZen\\Assets\\Scripts\\GreenButtonUFO.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GreenButtonUFO.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAAAD8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T21:23:18.187Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HovTurret.cs",
+              "DocumentMoniker": "C:\\Users\\Yassine\\Desktop\\Velocity_Zen\\VelocityZen\\Assets\\Scripts\\HovTurret.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\HovTurret.cs",
+              "ToolTip": "C:\\Users\\Yassine\\Desktop\\Velocity_Zen\\VelocityZen\\Assets\\Scripts\\HovTurret.cs",
+              "RelativeToolTip": "Assets\\Scripts\\HovTurret.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABMAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T18:06:54.088Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Agent_CIA.cs",
               "DocumentMoniker": "C:\\Users\\Yassine\\Desktop\\Velocity_Zen\\VelocityZen\\Assets\\Scripts\\Agent_CIA.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Agent_CIA.cs",
               "ToolTip": "C:\\Users\\Yassine\\Desktop\\Velocity_Zen\\VelocityZen\\Assets\\Scripts\\Agent_CIA.cs",
               "RelativeToolTip": "Assets\\Scripts\\Agent_CIA.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFcAAAAxAAAA",
+              "ViewState": "AQIAADYAAAAAAAAAAAAYwFcAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T17:45:31.972Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-24T17:45:31.972Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "LaserUFO.cs",
               "DocumentMoniker": "C:\\Users\\Yassine\\Desktop\\Velocity_Zen\\VelocityZen\\Assets\\Scripts\\LaserUFO.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\LaserUFO.cs",
@@ -106,7 +136,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "AgentBullet.cs",
               "DocumentMoniker": "C:\\Users\\Yassine\\Desktop\\Velocity_Zen\\VelocityZen\\Assets\\Scripts\\AgentBullet.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\AgentBullet.cs",
@@ -118,7 +148,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Vehicle2.cs",
               "DocumentMoniker": "C:\\Users\\Yassine\\Desktop\\Velocity_Zen\\VelocityZen\\Assets\\Scripts\\Vehicle2.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Vehicle2.cs",
@@ -126,12 +156,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Vehicle2.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T17:08:33.294Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-24T17:08:33.294Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "NewBehaviourScript.cs",
               "DocumentMoniker": "C:\\Users\\Yassine\\Desktop\\Velocity_Zen\\VelocityZen\\Assets\\Scripts\\NewBehaviourScript.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\NewBehaviourScript.cs",
@@ -143,7 +172,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "UFOScript.cs",
               "DocumentMoniker": "C:\\Users\\Yassine\\Desktop\\Velocity_Zen\\VelocityZen\\Assets\\Scripts\\UFOScript.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UFOScript.cs",
@@ -155,7 +184,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Shield.cs",
               "DocumentMoniker": "C:\\Users\\Yassine\\Desktop\\Velocity_Zen\\VelocityZen\\Assets\\Scripts\\Shield.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Shield.cs",
@@ -167,7 +196,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Bullet.cs",
               "DocumentMoniker": "C:\\Users\\Yassine\\Desktop\\Velocity_Zen\\VelocityZen\\Assets\\Scripts\\Bullet.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Bullet.cs",
